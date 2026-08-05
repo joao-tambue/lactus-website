@@ -5,10 +5,11 @@ import internacionalLogo from '../../../assets/icons/internacional-logo.svg'
 import linhcaCurva from '../../../assets/icons/linha-curva.svg'
 import { CTAButton } from '../../ui/button'
 import { floatingImages, galleryItems } from '../../../constants/hero'
+import { MarqueeStrip } from '../../ui/MarqueeStrip'
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-6 pt-16 pb-24 sm:px-10 lg:pt-20">
+    <section className="relative overflow-hidden px-6 pt-16 sm:px-10 lg:pt-20">
       <div className="relative mx-auto max-w-284.75">
         {/* Decorative floating circle with star */}
         <span className="absolute left-[1%] top-[75%] hidden size-12 items-center justify-center rounded-full bg-lime-100 text-emerald-900 lg:flex">
@@ -121,6 +122,10 @@ export function Hero() {
             </div>
           )
         })}
+      </div>
+
+      <div className="-mx-6 mt-14 sm:-mx-10">
+        <MarqueeStrip />
       </div>
     </section>
   )
