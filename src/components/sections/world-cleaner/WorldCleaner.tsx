@@ -5,79 +5,57 @@ const cards: WorldCleanerCardData[] = [
     title: 'Protect Our Animal',
     description:
       'Energy efficiency gains to 80% compared traditional lighting system.',
-    topImage: {
-      src: 'https://picsum.photos/seed/ecoscrap-goats/260/210',
-      alt: 'Cabras junto a resíduos numa zona rural',
+    photo: {
+      src: '/world-cleaner/card1-photos.png',
+      alt: 'Cabras e uma vaca junto a resíduos numa zona rural',
     },
-    bottomImage: {
-      src: 'https://picsum.photos/seed/ecoscrap-cow/260/300',
-      alt: 'Vaca junto a lixo espalhado na relva',
-    },
+    variant: 'neutral',
   },
   {
     title: 'Cleanup The Environment',
     description:
       'Energy efficiency gains to 80% compared traditional lighting system.',
-    topImage: {
-      src: 'https://picsum.photos/seed/ecoscrap-mountain/260/210',
-      alt: 'Montanha coberta de neve com floresta',
+    photo: {
+      src: '/world-cleaner/card2-photos.png',
+      alt: 'Montanha nevada e rebanho de ovelhas num campo verde',
     },
-    bottomImage: {
-      src: 'https://picsum.photos/seed/ecoscrap-sheep/260/300',
-      alt: 'Rebanho de ovelhas num campo verde',
-    },
-    active: true,
+    variant: 'lime',
   },
   {
     title: 'Protect & Cleanup The Environment',
     description:
       'Energy efficiency gains to 80% compared traditional lighting system.',
-    topImage: {
-      src: 'https://picsum.photos/seed/ecoscrap-sky/260/210',
-      alt: 'Pessoa com os braços abertos para o céu',
+    photo: {
+      src: '/world-cleaner/card3-photos.png',
+      alt: 'Pessoa de braços abertos junto a um campo de girassóis',
     },
-    bottomImage: {
-      src: 'https://picsum.photos/seed/ecoscrap-sunflowers/260/300',
-      alt: 'Campo de girassóis ao pôr do sol',
-    },
-  },
-  {
-    title: 'Reduce Waste Together',
-    description:
-      'Energy efficiency gains to 80% compared traditional lighting system.',
-    topImage: {
-      src: 'https://picsum.photos/seed/ecoscrap-forest/260/210',
-      alt: 'Trilho no meio de uma floresta densa',
-    },
-    bottomImage: {
-      src: 'https://picsum.photos/seed/ecoscrap-hands/260/300',
-      alt: 'Mãos a segurar uma planta jovem',
-    },
+    variant: 'neutral',
   },
 ]
 
 export function WorldCleaner() {
   return (
-    <section className="py-20 lg:py-28">
-      <div className="mx-auto max-w-5xl px-6 sm:px-10">
-        <h2 className="text-balance text-4xl font-bold leading-tight tracking-tight text-neutral-950 sm:text-5xl">
-          Make Our World Cleaner &amp; Greener!
-        </h2>
-        <p className="mt-4 max-w-2xl text-balance text-sm leading-relaxed text-neutral-500 sm:text-base">
-          Discover efficient scrap recycling services right in your
-          neighborhood! We&apos;re dedicated to providing convenient and
-          reliable scrap recycling.
-        </p>
-      </div>
+    <section className="px-6 py-20 sm:px-10 lg:py-28">
+      <div className="mx-auto max-w-307.5">
+        <div className="flex flex-col items-start gap-3">
+          <h2 className="text-[48px] font-semibold leading-[1.2] text-black">
+            Make Our World Cleaner &amp; Greener!
+          </h2>
+          <p className="max-w-134.25 text-base leading-relaxed text-[#1e1e1e]">
+            Discover efficient scrap recycling services right in your
+            neighborhood! We&apos;re dedicated to providing convenient and
+            reliable scrap recycling.
+          </p>
+        </div>
 
-      {/* Horizontally scrollable carousel, edge-to-edge with peek of the next card */}
-      <div className="mt-14 overflow-x-auto pb-2 pt-8 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <div className="flex snap-x snap-mandatory gap-6 pl-6 sm:pl-10">
-          {cards.map((card) => (
-            <WorldCleanerCard key={card.title} {...card} />
-          ))}
-          {/* trailing spacer keeps the last card from sitting flush against the viewport edge once scrolled fully */}
-          <div className="w-px shrink-0" aria-hidden="true" />
+        {/* Fixed-width cards mirror the Figma design 1:1; below `lg` the row
+            scrolls horizontally instead of shrinking/distorting the cards. */}
+        <div className="-mx-6 mt-15 overflow-x-auto px-6 pb-2 sm:-mx-10 sm:px-10 lg:mx-0 lg:overflow-visible lg:px-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex w-max gap-6 lg:w-full lg:justify-center">
+            {cards.map((card) => (
+              <WorldCleanerCard key={card.title} {...card} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
