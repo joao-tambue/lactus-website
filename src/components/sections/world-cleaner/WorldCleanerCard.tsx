@@ -1,4 +1,5 @@
-import { ArrowUpRightIcon } from './icons'
+import { ArrowUpRightIcon } from '@/components/icons'
+import { type WorldCleanerCardData } from '@/data/worldCleaner'
 
 // Same blob path exported from Figma (node 173:817), reused for every card —
 // only the fill color changes between the neutral and lime variants.
@@ -9,13 +10,6 @@ const SHAPE_FILL = {
   neutral: '#EFEFEF',
   lime: '#D7FFB1',
 } as const
-
-export type WorldCleanerCardData = {
-  title: string
-  description: string
-  photo: { src: string; alt: string }
-  variant?: keyof typeof SHAPE_FILL
-}
 
 export function WorldCleanerCard({
   title,
@@ -48,10 +42,10 @@ export function WorldCleanerCard({
 
           <a
             href="#read-more"
-            className="flex items-center gap-1.75 text-base font-medium text-[#010707] transition-opacity hover:opacity-70"
+            className="flex items-center gap-1.75 text-base font-medium text-ink-900 transition-opacity hover:opacity-70"
           >
             Read More
-            <span className="flex size-4 shrink-0 items-center justify-center rounded-full border border-[#667085]">
+            <span className="flex size-4 shrink-0 items-center justify-center rounded-full border border-line-400">
               <ArrowUpRightIcon className="size-2.5" />
             </span>
           </a>

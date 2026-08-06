@@ -1,5 +1,6 @@
-export function LogoMark({ className = '' }: { className?: string }) {
-  // Pinwheel/flower mark made of 6 overlapping petal ellipses
+type IconProps = { className?: string }
+
+export function LogoMark({ className = '' }: IconProps) {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -56,7 +57,38 @@ export function LogoMark({ className = '' }: { className?: string }) {
   )
 }
 
-export function GlobeIcon({ className = '' }: { className?: string }) {
+export function StarIcon({ className = '' }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M12 2c.4 3.6 1.2 6 2.8 7.6C16.4 11.2 18.8 12 22 12c-3.2 0-5.6.8-7.2 2.4C13.2 16 12.4 18.4 12 22c-.4-3.6-1.2-6-2.8-7.6C7.6 12.8 5.2 12 2 12c3.2 0 5.6-.8 7.2-2.4C10.8 8 11.6 5.6 12 2Z" />
+    </svg>
+  )
+}
+
+export function ArrowUpRightIcon({ className = '' }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M7 17 17 7" />
+      <path d="M8 7h9v9" />
+    </svg>
+  )
+}
+
+export function GlobeIcon({ className = '' }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -75,7 +107,7 @@ export function GlobeIcon({ className = '' }: { className?: string }) {
   )
 }
 
-export function ChevronDownIcon({ className = '' }: { className?: string }) {
+export function ChevronDownIcon({ className = '' }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -92,7 +124,7 @@ export function ChevronDownIcon({ className = '' }: { className?: string }) {
   )
 }
 
-export function SearchIcon({ className = '' }: { className?: string }) {
+export function SearchIcon({ className = '' }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -110,7 +142,7 @@ export function SearchIcon({ className = '' }: { className?: string }) {
   )
 }
 
-export function MenuIcon({ className = '' }: { className?: string }) {
+export function MenuIcon({ className = '' }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -129,7 +161,7 @@ export function MenuIcon({ className = '' }: { className?: string }) {
   )
 }
 
-export function CloseIcon({ className = '' }: { className?: string }) {
+export function CloseIcon({ className = '' }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"

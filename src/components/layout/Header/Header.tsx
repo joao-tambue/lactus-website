@@ -6,7 +6,7 @@ import {
   LogoMark,
   MenuIcon,
   SearchIcon,
-} from './icons'
+} from '@/components/icons'
 
 const navLinks = [
   { label: 'About', href: '#about' },

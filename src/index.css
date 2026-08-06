@@ -2,6 +2,28 @@
 
 @theme {
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand palette */
+  --color-forest-950: #003f2e;
+  --color-forest-800: #265949;
+  --color-forest-700: #416d64;
+  --color-forest-600: #2c5648;
+  --color-leaf-200: #d7ffb1;
+  --color-leaf-400: #93e14a;
+  --color-mist-200: #c7d8b7;
+  --color-mist-200-soft: rgba(199, 216, 183, 0.17);
+  --color-mist-100: #efefef;
+  --color-ash-200: #b0b0b0;
+
+  /* Text and line colors */
+  --color-ink-950: #0f172a;
+  --color-ink-900: #010707;
+  --color-ink-800: #1e1e1e;
+  --color-ink-700: #4b4f47;
+  --color-ink-500: #8b8b8b;
+  --color-ink-400: #b5b5c0;
+  --color-line-200: #d5d9de;
+  --color-line-400: #667085;
 }
 
 @keyframes marquee {

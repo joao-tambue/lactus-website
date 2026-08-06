@@ -1,5 +1,4 @@
-import { StarIcon } from "../sections/hero/icons"
-
+import { StarIcon } from '@/components/icons'
 
 const marqueeItems = [
   'Eco-friendly the planet',

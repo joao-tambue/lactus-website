@@ -1,11 +1,11 @@
 import { FloatingImage } from './FloatingImage'
-import { StarIcon } from './icons'
-import longArrow from '../../../assets/icons/long-arrow.svg'
-import internacionalLogo from '../../../assets/icons/internacional-logo.svg'
-import linhcaCurva from '../../../assets/icons/linha-curva.svg'
-import { CTAButton } from '../../ui/button'
-import { floatingImages, galleryItems } from '../../../constants/hero'
-import { MarqueeStrip } from '../../ui/MarqueeStrip'
+import { StarIcon } from '@/components/icons'
+import longArrow from '@/assets/icons/long-arrow.svg'
+import internacionalLogo from '@/assets/icons/internacional-logo.svg'
+import linhcaCurva from '@/assets/icons/linha-curva.svg'
+import { CTAButton } from '@/components/ui/Button'
+import { floatingImages, galleryItems } from '@/data/hero'
+import { MarqueeStrip } from '@/components/ui/MarqueeStrip'
 
 export function Hero() {
   return (
@@ -90,7 +90,6 @@ export function Hero() {
                   className="size-full object-cover"
                   loading="lazy"
                 />
-                {/* <div className="absolute inset-0 bg-emerald-950/50" /> */}
                 <span className="absolute left-3 top-5 flex flex-col justify-center items-center gap-1.5 text-lg text-center font-medium text-white">
                   <img
                     src={internacionalLogo}

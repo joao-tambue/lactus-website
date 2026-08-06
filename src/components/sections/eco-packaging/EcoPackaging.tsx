@@ -2,11 +2,11 @@ import { FiberBars } from './FiberBars'
 
 export function EcoPackaging() {
   return (
-    <section className="bg-[rgba(199,216,183,0.17)] px-6 py-20 sm:px-10 lg:py-28">
+    <section className="bg-mist-200-soft px-6 py-20 sm:px-10 lg:py-28">
       <div className="mx-auto max-w-307.5">
         <h2 className="mx-auto max-w-177.5 text-balance text-center text-[48px] font-semibold leading-[1.2] text-black">
           Reducing Plastic Waste Through{' '}
-          <span className="inline-block rounded-full bg-[#d7ffb1] px-8 py-1.5">
+          <span className="inline-block rounded-full bg-leaf-200 px-8 py-1.5">
             Eco-Friendly
           </span>{' '}
           Packaging
@@ -25,15 +25,15 @@ export function EcoPackaging() {
                 loading="lazy"
               />
               <div
-                className="absolute -left-21.5 -top-21.25 size-43.75 rounded-full bg-[#C7D8B7]"
+                className="absolute -left-21.5 -top-21.25 size-43.75 rounded-full bg-mist-200"
                 aria-hidden="true"
               />
               <div
-                className="absolute left-60.5 -top-6.5 size-13.75 rounded-full bg-[#265949]"
+                className="absolute left-60.5 -top-6.5 size-13.75 rounded-full bg-forest-800"
                 aria-hidden="true"
               />
               <div
-                className="absolute left-35.75 top-62.5 size-43.75 rounded-full bg-[#93E14A]"
+                className="absolute left-35.75 top-62.5 size-43.75 rounded-full bg-leaf-400"
                 aria-hidden="true"
               />
               <img
@@ -42,7 +42,7 @@ export function EcoPackaging() {
                 aria-hidden="true"
                 className="pointer-events-none absolute -left-0.5 top-70 h-20 w-23"
               />
-              <div className="absolute left-1/2 top-27 flex size-13 -translate-x-1/2 items-center justify-center rounded-lg bg-[#416d64] p-2.75">
+              <div className="absolute left-1/2 top-27 flex size-13 -translate-x-1/2 items-center justify-center rounded-lg bg-forest-700 p-2.75">
                 <img
                   src="/eco-packaging/badge-icon.svg"
                   alt=""
@@ -72,13 +72,13 @@ export function EcoPackaging() {
             </div>
 
             {/* Card 3 — mission statement on solid lime */}
-            <div className="relative flex h-89.5 w-66.75 shrink-0 flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#d7ffb1] px-7.25 py-19.5">
+            <div className="relative flex h-89.5 w-66.75 shrink-0 flex-col items-start gap-2 overflow-hidden rounded-2xl bg-leaf-200 px-7.25 py-19.5">
               <img
                 src="/eco-packaging/target-icon.svg"
                 alt=""
                 className="relative size-12"
               />
-              <p className="relative w-52.25 text-2xl leading-[1.2] text-[#2c5648]">
+              <p className="relative w-52.25 text-2xl leading-[1.2] text-forest-600">
                 Our mission is to make sustainable food packaging solutions
                 accessible to everyone
               </p>

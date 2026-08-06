@@ -1,13 +1,5 @@
 import { forwardRef } from 'react'
-
-export type TestimonialCardData = {
-  quote: string
-  name: string
-  role: string
-  avatarSrc: string
-  avatarAlt: string
-  variant?: 'light' | 'dark'
-}
+import { type TestimonialCardData } from '@/data/testimonials'
 
 export const TestimonialCard = forwardRef<HTMLDivElement, TestimonialCardData>(
   function TestimonialCard(
@@ -20,7 +12,7 @@ export const TestimonialCard = forwardRef<HTMLDivElement, TestimonialCardData>(
       <div
         ref={ref}
         className={`flex h-88.25 w-150 shrink-0 snap-center flex-col items-center gap-8 rounded-[17px] px-25 py-11 ${
-          isDark ? 'bg-[#003f2e]' : 'bg-[#efefef]'
+          isDark ? 'bg-forest-950' : 'bg-mist-100'
         }`}
       >
         <img
@@ -31,7 +23,7 @@ export const TestimonialCard = forwardRef<HTMLDivElement, TestimonialCardData>(
 
         <p
           className={`w-100 text-center text-xl leading-[1.5] ${
-            isDark ? 'text-white' : 'text-[#4b4f47]'
+            isDark ? 'text-white' : 'text-ink-700'
           }`}
         >
           {quote}
@@ -47,7 +39,7 @@ export const TestimonialCard = forwardRef<HTMLDivElement, TestimonialCardData>(
             <p className={`font-medium ${isDark ? 'text-white' : 'text-black'}`}>
               {name}
             </p>
-            <p className={isDark ? 'text-[#b5b5c0]' : 'text-[#8b8b8b]'}>{role}</p>
+            <p className={isDark ? 'text-ink-400' : 'text-ink-500'}>{role}</p>
           </div>
         </div>
       </div>

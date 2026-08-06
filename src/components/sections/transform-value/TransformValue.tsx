@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon } from './icons'
+import { ArrowUpRightIcon } from '@/components/icons'
 
 export function TransformValue() {
   return (
@@ -27,7 +27,7 @@ export function TransformValue() {
               <a
                 href="#solutions"
                 aria-label="Explorar soluções"
-                className="flex size-12.5 shrink-0 items-center justify-center rounded-full bg-[#003F2E] text-white transition-transform hover:-translate-y-0.5 hover:translate-x-0.5"
+                className="flex size-12.5 shrink-0 items-center justify-center rounded-full bg-forest-950 text-white transition-transform hover:-translate-y-0.5 hover:translate-x-0.5"
               >
                 <ArrowUpRightIcon className="size-6" />
               </a>
