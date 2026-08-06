@@ -1,11 +1,11 @@
 export const home = {
   hero: {
     headline:
-      'Efficient <highlight>Scrap</highlight> Recycling Services Near You',
+      'Sustainable <highlight>Technology</highlight> for a Better Future',
     supporting:
-      "Discover efficient scrap recycling services right in your neighborhood! We're dedicated to providing convenient and reliable scrap recycling solutions to businesses and individuals alike. Whether you have metal, paper, plastic, or electronics to recycle, our experienced team is here to help.",
+      "Lactus is an Angolan tech startup that develops innovative sustainability-driven solutions, with the purpose of improving people's quality of life and contributing to the preservation of the environment.",
     nasaCard: 'Nasa Space<br/>Apps Winner {{year}}',
-    ptngBadge: 'PTNG Winners at<br/>Tech & Innovation',
+    ptngBadge: 'Tigra Nova Garra<br/>Winners 2026',
     curveAlt: 'Curved line',
     longArrowAlt: 'Long arrow',
     badgeImageAlt: 'International Environment Day',
@@ -22,106 +22,106 @@ export const home = {
     },
   },
   transformValue: {
-    title: 'Transforming Scrap into Value',
+    title: 'How Lactus Came to Be',
     supporting:
-      "Discover efficient scrap recycling neighborhood! We're dedicated to providing convenient reliable.",
-    exploreTitle: 'Explore our<br/>solutions',
-    exploreAria: 'Explore solutions',
-    howTitle: 'How We Make It?',
+      'Lactus was born from a moment of challenge, creativity and determination.',
+    exploreTitle: 'Learn More<br/>About Lactus',
+    exploreAria: 'Learn more about Lactus',
+    howTitle: 'What We Do',
     howText:
-      "UrbanGreen tech's LED lighting solutions have demonstrated energy efficiency gains",
-    statTitle: '80% Energy Efficiency',
+      'We develop innovative technological solutions in the areas of sustainable energy, digital health, environmental technologies and smart systems.',
+    statTitle: 'Lactus Today',
     statText:
-      "UrbanGreen tech's LED lighting solutions have demonstrated energy efficiency gains of up to 80% compared to traditional lighting system.",
+      'Our journey began during the NASA Space Apps Challenge Luanda 2025, one of the world\'s largest hackathons. Initially, we were just a team formed with the goal of competing, learning and testing our abilities. However, throughout the competition, we stood out not only for our solution, but also for our vision and team spirit. The result was remarkable: we took first place and, at the same time, the recognition and affection of the public. It was then that we realised that what we had created went beyond a hackathon project - it had real potential for impact. Many asked about the name "Lactus", and our answer was always simple and symbolic: the name is inspired by "Galactus", a powerful entity, representing strength, transformation and large-scale impact. We adapted this concept to our identity, creating a unique name that reflects our ambition to transform realities through technology. Motivated by the recognition and the potential of our ideas, we decided to take the next step: turn the team into something bigger. Thus, in November 2025, Lactus was officially born as a startup, committed to developing innovative solutions that generate real impact on society.',
     aboutImageAlt: 'Greenhouse with plants surrounded by vegetation',
     containersImageAlt: 'Recycling containers on a street',
   },
   initiatives: {
-    title: 'Our Initiatives for 2024',
+    title: 'Our Focus Areas',
     items: {
-      treePlanting: {
-        title: 'Tree Planting',
+      sustainableEnergy: {
+        title: 'Sustainable Energy',
         description:
-          'We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.',
-        imageAlt: 'Volunteers planting young trees',
+          'Innovative clean and renewable energy solutions, such as Lumi, which generates electricity from nature.',
+        imageAlt: 'Solar panels at sunset',
       },
-      beachCleanup: {
-        title: 'Beach Cleanup',
+      digitalHealth: {
+        title: 'Digital Health',
         description:
-          'We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.',
-        imageAlt: 'Tropical beach with crystal-clear waters',
+          'Smart platforms such as Saúde+, which predict and prevent disease outbreaks based on data.',
+        imageAlt: 'Health professional analyzing data',
       },
-      educationEvents: {
-        title: 'Education Events',
+      environmentalTech: {
+        title: 'Environmental Technologies',
         description:
-          'We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.',
-        imageAlt: 'Educational workshop on recycling',
+          'Technologies that promote the preservation of the environment and the responsible use of natural resources.',
+        imageAlt: 'Preserved natural landscape',
       },
-      parkCleaning: {
-        title: 'Park Cleaning',
+      smartSystems: {
+        title: 'Smart Systems & IoT',
         description:
-          'We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.',
-        imageAlt: 'Volunteers cleaning up a park',
+          'Connected systems that modernize processes, improve efficiency and raise quality of life.',
+        imageAlt: 'Modern city with connected devices',
       },
     },
   },
   worldCleaner: {
-    title: 'Make Our World Cleaner & Greener!',
+    title: 'What Sets Us Apart',
     supporting:
-      "Discover efficient scrap recycling services right in your neighborhood! We're dedicated to providing convenient and reliable scrap recycling.",
+      'Lactus stands out by developing practical, accessible and sustainable solutions, designed for the real African context.',
     cards: {
-      protectAnimals: {
-        title: 'Protect Our Animal',
+      innovation: {
+        title: 'Innovation',
         description:
-          'Energy efficiency gains to 80% compared traditional lighting system.',
+          'Practical solutions, designed to work in the real context of African communities.',
         photoAlt: 'Goats and a cow near waste in a rural area',
       },
-      cleanupEnvironment: {
-        title: 'Cleanup The Environment',
+      sustainability: {
+        title: 'Sustainability',
         description:
-          'Energy efficiency gains to 80% compared traditional lighting system.',
+          'Technologies designed to generate positive environmental impact and promote the responsible use of natural resources.',
         photoAlt: 'Snowy mountain and flock of sheep in a green field',
       },
-      protectAndCleanup: {
-        title: 'Protect & Cleanup The Environment',
+      socialImpact: {
+        title: 'Social Impact',
         description:
-          'Energy efficiency gains to 80% compared traditional lighting system.',
+          'Projects that improve quality of life, create opportunities and promote community development.',
         photoAlt: 'Person with open arms next to a sunflower field',
       },
     },
   },
   ecoPackaging: {
-    title:
-      'Reducing Plastic Waste Through <highlight>Eco-Friendly</highlight> Packaging',
-    fiberText: 'Recycled/renewable/organic fibers.',
+    title: 'Innovation Guided by <highlight>Values</highlight>',
+    brandName: 'Lactus',
+    fiberText: 'Innovation and sustainability in every solution.',
     mission:
-      'Our mission is to make sustainable food packaging solutions accessible to everyone',
-    brandImageAlt: 'Dark green foliage, GreenWarp brand background image',
+      "We work to generate a positive impact on people's lives, especially in the most vulnerable communities.",
+    brandImageAlt: 'Dark green foliage, Lactus brand background image',
     mountainsImageAlt: 'Winding road between fog-covered mountains',
     pebblesImageAlt: 'Wet pebbles and leaves, natural textures',
     recycleSymbolAlt: 'Recycling symbol',
   },
   testimonials: {
-    title: 'Get to Know What Our Clients Think',
+    title: 'The Team Behind Lactus',
     starsAlt: '5-star rating',
     items: {
-      adilsonCamacho: {
+      catarinaMonteiro: {
         quote:
-          '"I found the copywriting tool to be incredibly helpful in streamlining my writing process. It saved me time and helped me come up with more compelling copy."',
-        role: 'Project Manager',
-        avatarAlt: 'Portrait of Adilson Camacho',
+          'We combine innovation, creativity and hard work to create solutions with real impact on the lives of people and communities.',
+        role: 'Project Manager & Founder',
+        avatarAlt: 'Portrait of Catarina Monteiro',
       },
-      joaoRabiMendes: {
+      anabelmoFeijo: {
         quote:
-          '"I found the copywriting tool to be incredibly helpful in streamlining my writing process. It saved me time and helped me come up with more compelling copy."',
-        role: 'General Coordinator of CAF',
-        avatarAlt: 'Portrait of João Rabi Mendes',
+          'Lactus was born from the dream of transforming the African reality through technology. First place at NASA Space Apps Luanda 2025 proved it is possible.',
+        role: 'CEO & Founder',
+        avatarAlt: 'Portrait of Anabelmo Feijó',
       },
-      joaoTambue: {
+      israelPedro: {
         quote:
-          '"Using the copywriting AI tool helped me improve my writing skills by showing me where I could improve and offering suggestions for how to do so."',
-        role: 'Software Engineer',
-        avatarAlt: 'Portrait of João Tambue',
+          'We believe in simple, accessible and scalable solutions, designed for the real context of African communities.',
+        role: 'CTO & Founder',
+        avatarAlt: 'Portrait of Israel Pedro',
       },
     },
   },

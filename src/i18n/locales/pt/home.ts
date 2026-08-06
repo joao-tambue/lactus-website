@@ -1,11 +1,11 @@
 export const home = {
   hero: {
     headline:
-      'Reciclagem Eficiente de <highlight>Sucata</highlight> Perto de Si',
+      'Tecnologia <highlight>Sustentável</highlight> para um Futuro Melhor',
     supporting:
-      'Descubra serviços eficientes de reciclagem de sucata mesmo no seu bairro! Estamos dedicados a fornecer soluções convenientes e fiáveis de reciclagem de sucata a empresas e particulares. Quer tenha metal, papel, plástico ou eletrónica para reciclar, a nossa equipa experiente está aqui para ajudar.',
+      'A Lactus é uma startup angolana de base tecnológica que desenvolve soluções inovadoras orientadas para a sustentabilidade, com o propósito de melhorar a qualidade de vida das pessoas e contribuir para a preservação do meio ambiente.',
     nasaCard: 'Vencedor Nasa Space<br/>Apps {{year}}',
-    ptngBadge: 'Vencedores PTNG em<br/>Tecnologia & Inovação',
+    ptngBadge: 'Vencedores Tigra Nova<br/>Garra 2026',
     curveAlt: 'Linha curva',
     longArrowAlt: 'Seta longa',
     badgeImageAlt: 'Dia Internacional do Ambiente',
@@ -22,107 +22,107 @@ export const home = {
     },
   },
   transformValue: {
-    title: 'Transformar Sucata em Valor',
+    title: 'Como Surgiu a Lactus',
     supporting:
-      'Descubra a reciclagem eficiente de sucata no seu bairro! Estamos dedicados a fornecer soluções convenientes e fiáveis.',
-    exploreTitle: 'Explore as<br/>nossas soluções',
-    exploreAria: 'Explorar soluções',
-    howTitle: 'Como o Fazemos?',
+      'A Lactus nasceu de um momento de desafio, criatividade e superação.',
+    exploreTitle: 'Saiba Mais<br/>Sobre a Lactus',
+    exploreAria: 'Saiba mais sobre a Lactus',
+    howTitle: 'O Que Fazemos',
     howText:
-      'As soluções de iluminação LED da UrbanGreen tech demonstraram ganhos de eficiência energética',
-    statTitle: '80% de Eficiência Energética',
+      'Desenvolvemos soluções tecnológicas inovadoras nas áreas de energia sustentável, saúde digital, tecnologias ambientais e sistemas inteligentes.',
+    statTitle: 'A Lactus na Atualidade',
     statText:
-      'As soluções de iluminação LED da UrbanGreen tech demonstraram ganhos de eficiência energética de até 80% em comparação com os sistemas de iluminação tradicionais.',
+      'A nossa jornada começou durante o NASA Space Apps Challenge Luanda 2025, um dos maiores hackathons do mundo. Inicialmente, éramos apenas uma equipa formada com o objetivo de competir, aprender e testar as nossas capacidades. No entanto, ao longo da competição, conseguimos destacar-nos não apenas pela nossa solução, mas também pela nossa visão e espírito de equipa. O resultado foi marcante: conquistámos o primeiro lugar e, ao mesmo tempo, o reconhecimento e o carinho do público. Foi nesse momento que percebemos que aquilo que tínhamos criado ia além de um projeto de hackathon - tinha potencial real de impacto. Muitos perguntaram sobre o nome “Lactus”, e a nossa resposta sempre foi simples e simbólica: o nome inspira-se em “Galactus”, uma entidade poderosa, representando força, transformação e impacto em larga escala. Adaptámos esse conceito à nossa identidade, criando um nome único que reflete a nossa ambição de transformar realidades através da tecnologia. Motivados pelo reconhecimento e pelo potencial das nossas ideias, decidimos dar o próximo passo: transformar a equipa em algo maior. Assim, em novembro de 2025, a Lactus nasceu oficialmente como startup, com o compromisso de desenvolver soluções inovadoras que gerem impacto real na sociedade.',
     aboutImageAlt: 'Estufa com plantas rodeada de vegetação',
     containersImageAlt: 'Contentores de reciclagem numa rua',
   },
   initiatives: {
-    title: 'As Nossas Iniciativas para 2024',
+    title: 'As Nossas Áreas de Atuação',
     items: {
-      treePlanting: {
-        title: 'Plantação de Árvores',
+      sustainableEnergy: {
+        title: 'Energia Sustentável',
         description:
-          'Oferecemos um conjunto abrangente de serviços digitais adaptados às diversas necessidades dos nossos clientes.',
-        imageAlt: 'Voluntários a plantar árvores jovens',
+          'Soluções inovadoras de energia limpa e renovável, como o Lumi, que gera eletricidade a partir da natureza.',
+        imageAlt: 'Painéis solares ao pôr do sol',
       },
-      beachCleanup: {
-        title: 'Limpeza de Praias',
+      digitalHealth: {
+        title: 'Saúde Digital',
         description:
-          'Oferecemos um conjunto abrangente de serviços digitais adaptados às diversas necessidades dos nossos clientes.',
-        imageAlt: 'Praia tropical com águas cristalinas',
+          'Plataformas inteligentes como o Saúde+, que preveem e previnem surtos de doenças com base em dados.',
+        imageAlt: 'Profissional de saúde a analisar dados',
       },
-      educationEvents: {
-        title: 'Eventos Educativos',
+      environmentalTech: {
+        title: 'Tecnologias Ambientais',
         description:
-          'Oferecemos um conjunto abrangente de serviços digitais adaptados às diversas necessidades dos nossos clientes.',
-        imageAlt: 'Workshop educativo sobre reciclagem',
+          'Tecnologias que promovem a preservação do meio ambiente e o uso responsável dos recursos naturais.',
+        imageAlt: 'Paisagem natural preservada',
       },
-      parkCleaning: {
-        title: 'Limpeza de Parques',
+      smartSystems: {
+        title: 'Sistemas Inteligentes & IoT',
         description:
-          'Oferecemos um conjunto abrangente de serviços digitais adaptados às diversas necessidades dos nossos clientes.',
-        imageAlt: 'Voluntários a limpar um parque',
+          'Sistemas conectados que modernizam processos, melhoram a eficiência e elevam a qualidade de vida.',
+        imageAlt: 'Cidade moderna com dispositivos conectados',
       },
     },
   },
   worldCleaner: {
-    title: 'Torne o Nosso Mundo Mais Limpo & Verde!',
+    title: 'Os Nossos Diferenciais',
     supporting:
-      'Descubra serviços eficientes de reciclagem de sucata mesmo no seu bairro! Estamos dedicados a fornecer uma reciclagem de sucata conveniente e fiável.',
+      'A Lactus destaca-se por desenvolver soluções práticas, acessíveis e sustentáveis, pensadas para o contexto real de África.',
     cards: {
-      protectAnimals: {
-        title: 'Proteger os Nossos Animais',
+      innovation: {
+        title: 'Inovação',
         description:
-          'Ganhos de eficiência energética até 80% em comparação com os sistemas de iluminação tradicionais.',
+          'Soluções práticas, pensadas para funcionar no contexto real das comunidades africanas.',
         photoAlt: 'Cabras e uma vaca junto a resíduos numa zona rural',
       },
-      cleanupEnvironment: {
-        title: 'Limpar o Ambiente',
+      sustainability: {
+        title: 'Sustentabilidade',
         description:
-          'Ganhos de eficiência energética até 80% em comparação com os sistemas de iluminação tradicionais.',
+          'Tecnologias concebidas para gerar impacto ambiental positivo e promover o uso responsável dos recursos naturais.',
         photoAlt: 'Montanha nevada e rebanho de ovelhas num campo verde',
       },
-      protectAndCleanup: {
-        title: 'Proteger & Limpar o Ambiente',
+      socialImpact: {
+        title: 'Impacto Social',
         description:
-          'Ganhos de eficiência energética até 80% em comparação com os sistemas de iluminação tradicionais.',
+          'Projetos que melhoram a qualidade de vida, geram oportunidades e promovem o desenvolvimento comunitário.',
         photoAlt: 'Pessoa de braços abertos junto a um campo de girassóis',
       },
     },
   },
   ecoPackaging: {
-    title:
-      'Redução do Desperdício de Plástico com Embalagens <highlight>Ecológicas</highlight>',
-    fiberText: 'Fibras recicladas/renováveis/orgânicas.',
+    title: 'Inovação Guiada por <highlight>Valores</highlight>',
+    brandName: 'Lactus',
+    fiberText: 'Inovação e sustentabilidade em cada solução.',
     mission:
-      'A nossa missão é tornar as soluções de embalagens alimentares sustentáveis acessíveis a todos',
+      'Trabalhamos para gerar impacto positivo na vida das pessoas, especialmente nas comunidades mais vulneráveis.',
     brandImageAlt:
-      'Folhagem verde escura, imagem de fundo da marca GreenWarp',
+      'Folhagem verde escura, imagem de fundo da marca Lactus',
     mountainsImageAlt: 'Estrada sinuosa entre montanhas cobertas de nevoeiro',
     pebblesImageAlt: 'Seixos e folhas molhadas, texturas naturais',
     recycleSymbolAlt: 'Símbolo de reciclagem',
   },
   testimonials: {
-    title: 'Conheça o Que os Nossos Clientes Pensam',
+    title: 'A Equipa por Trás da Lactus',
     starsAlt: 'Avaliação de 5 estrelas',
     items: {
-      adilsonCamacho: {
+      catarinaMonteiro: {
         quote:
-          '"Descobri que a ferramenta de copywriting é extremamente útil para agilizar o meu processo de escrita. Poupa-me tempo e ajudou-me a criar textos mais persuasivos."',
-        role: 'Gestor de Projetos',
-        avatarAlt: 'Retrato de Adilson Camacho',
+          'Unimos inovação, criatividade e muito empenho para criar soluções com impacto real na vida das pessoas e das comunidades.',
+        role: 'Gestora de Projetos & Founder',
+        avatarAlt: 'Retrato de Catarina Monteiro',
       },
-      joaoRabiMendes: {
+      anabelmoFeijo: {
         quote:
-          '"Descobri que a ferramenta de copywriting é extremamente útil para agilizar o meu processo de escrita. Poupa-me tempo e ajudou-me a criar textos mais persuasivos."',
-        role: 'Cordenador Geral do CAF',
-        avatarAlt: 'Retrato de João Rabi Mendes',
+          'A Lactus nasceu do sonho de transformar a realidade africana através da tecnologia. O primeiro lugar no NASA Space Apps Luanda 2025 provou que é possível.',
+        role: 'CEO & Fundador',
+        avatarAlt: 'Retrato de Anabelmo Feijó',
       },
-      joaoTambue: {
+      israelPedro: {
         quote:
-          '"Utilizar a ferramenta de copywriting com IA ajudou-me a melhorar as minhas competências de escrita, mostrando-me onde podia melhorar e oferecendo sugestões de como o fazer."',
-        role: 'Engenheiro de Software',
-        avatarAlt: 'Retrato de João Tambue',
+          'Acreditamos em soluções simples, acessíveis e escaláveis, pensadas para o contexto real das comunidades africanas.',
+        role: 'CTO & Fundador',
+        avatarAlt: 'Retrato de Israel Pedro',
       },
     },
   },

@@ -1,8 +1,8 @@
 export type InitiativeId =
-  | 'treePlanting'
-  | 'beachCleanup'
-  | 'educationEvents'
-  | 'parkCleaning'
+  | 'sustainableEnergy'
+  | 'digitalHealth'
+  | 'environmentalTech'
+  | 'smartSystems'
 
 export type Initiative = {
   id: InitiativeId
@@ -11,19 +11,19 @@ export type Initiative = {
 
 export const initiatives: Initiative[] = [
   {
-    id: 'treePlanting',
-    image: 'https://picsum.photos/seed/ecoscrap-tree-planting/420/340',
+    id: 'sustainableEnergy',
+    image: 'https://picsum.photos/seed/lactus-energy/420/340',
   },
   {
-    id: 'beachCleanup',
-    image: 'https://picsum.photos/seed/ecoscrap-beach/420/340',
+    id: 'digitalHealth',
+    image: 'https://picsum.photos/seed/lactus-health/420/340',
   },
   {
-    id: 'educationEvents',
-    image: 'https://picsum.photos/seed/ecoscrap-education/420/340',
+    id: 'environmentalTech',
+    image: 'https://picsum.photos/seed/lactus-environment/420/340',
   },
   {
-    id: 'parkCleaning',
-    image: 'https://picsum.photos/seed/ecoscrap-park/420/340',
+    id: 'smartSystems',
+    image: 'https://picsum.photos/seed/lactus-iot/420/340',
   },
 ]

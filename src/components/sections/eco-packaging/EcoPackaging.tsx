@@ -23,7 +23,7 @@ export function EcoPackaging() {
             scrolls horizontally instead of shrinking/distorting the cards. */}
         <div className="-mx-6 mt-15 overflow-x-auto px-6 pb-2 sm:-mx-10 sm:px-10 lg:mx-0 lg:overflow-visible lg:px-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="flex w-max gap-6 lg:w-full lg:justify-center">
-            {/* Card 1 — GreenWarp brand mark over a foliage photo */}
+            {/* Card 1 — Lactus brand mark over a foliage photo */}
             <div className="relative h-89.5 w-66.75 shrink-0 overflow-hidden rounded-2xl">
               <img
                 src="/eco-packaging/card-leaves.png"
@@ -57,7 +57,7 @@ export function EcoPackaging() {
                 />
               </div>
               <p className="absolute left-1/2 top-46.125 w-max -translate-x-1/2 -translate-y-1/2 text-center text-base font-medium leading-[1.2] text-white">
-                GreenWarp
+                {t('ecoPackaging.brandName')}
               </p>
             </div>
 

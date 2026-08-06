@@ -1,8 +1,8 @@
 export const common = {
   meta: {
-    title: 'Lactus — Efficient Scrap Recycling',
+    title: 'Lactus — Sustainable Technology Innovation',
     description:
-      'Discover efficient scrap recycling services right in your neighborhood. Convenient and reliable solutions for businesses and individuals.',
+      "Lactus is an Angolan tech startup developing innovative sustainability-driven solutions, with the purpose of improving people's quality of life and preserving the environment.",
   },
   header: {
     nav: {
@@ -23,11 +23,11 @@ export const common = {
   },
   cta: { getStarted: 'Get Started' },
   marquee: {
-    ecoFriendly: 'Eco-friendly the planet',
-    conserve: 'Conserve the planet',
-    save: 'Save the planet',
-    envFriendly: 'Environmentally-friendly',
-    green: 'Green the planet',
+    ecoFriendly: 'Innovation',
+    conserve: 'Sustainability',
+    save: 'Social Impact',
+    envFriendly: 'Technology for All',
+    green: 'Greener Future',
   },
   readMore: 'Read More',
   notFound: {

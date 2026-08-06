@@ -1,0 +1,175 @@
+# **1. Quem Somos**
+
+A **Lactus** é uma **startup angolana de base tecnológica** que desenvolve soluções inovadoras orientadas para a sustentabilidade, com o propósito de **melhorar a qualidade de vida das pessoas e contribuir para a preservação do meio ambiente**.
+
+Acreditamos no poder da tecnologia como ferramenta de transformação social. Por isso, criamos **soluções inteligentes, acessíveis e adaptadas à realidade africana**, capazes de responder a desafios reais enfrentados por comunidades, empresas e instituições.
+
+O nosso trabalho baseia-se na combinação de **inovação tecnológica, impacto social e sustentabilidade ambiental**, promovendo a modernização e o desenvolvimento em Angola e no continente africano.
+
+Cada projeto da Lactus nasce de uma visão clara:
+
+**resolver problemas reais com soluções práticas, eficientes e sustentáveis.**
+
+Um exemplo disso é o Lumi — uma solução inovadora que utiliza microrganismos do solo para gerar eletricidade limpa, oferecendo uma alternativa energética sustentável, especialmente para comunidades com acesso limitado à energia.
+
+Mais do que uma startup, a Lactus é um agente de mudança. Trabalhamos para **transformar comunidades, gerar oportunidades e construir um futuro mais verde, inclusivo e tecnologicamente avançado**.
+
+# **2 - Como Surgiu a Lactus**
+
+A Lactus nasceu de um momento de desafio, criatividade e superação.
+
+A nossa jornada começou durante o **NASA Space Apps Challenge Luanda 2025**, um dos maiores hackathons do mundo. Inicialmente, éramos apenas uma equipa formada com o objetivo de competir, aprender e testar as nossas capacidades.
+
+No entanto, ao longo da competição, conseguimos destacar-nos não apenas pela nossa solução, mas também pela nossa visão e espírito de equipa. O resultado foi marcante: **conquistámos o primeiro lugar** e, ao mesmo tempo, o reconhecimento e o carinho do público.
+
+Foi nesse momento que percebemos que aquilo que tínhamos criado ia além de um projeto de hackathon - tinha potencial real de impacto.
+
+Muitos perguntaram sobre o nome **“Lactus”**, e a nossa resposta sempre foi simples e simbólica:
+
+o nome inspira-se em **“Galactus”**, uma entidade poderosa, representando **força, transformação e impacto em larga escala**. Adaptámos esse conceito à nossa identidade, criando um nome único que reflete a nossa ambição de transformar realidades através da tecnologia.
+
+Motivados pelo reconhecimento e pelo potencial das nossas ideias, decidimos dar o próximo passo: transformar a equipa em algo maior.
+
+Assim, **em novembro de 2025, a Lactus nasceu oficialmente como startup**, com o compromisso de desenvolver soluções inovadoras que gerem impacto real na sociedade.
+
+# **3 - Missão**
+
+Transformar vidas em África através da criação de **tecnologias inteligentes e sustentáveis**, desenvolvendo soluções inovadoras, acessíveis e eficazes que resolvam problemas reais e promovam o desenvolvimento social, económico e ambiental.
+
+# **4 - Visão**
+
+Ser reconhecida como uma **referência em inovação tecnológica sustentável em África**, liderando a transformação digital e ambiental, e contribuindo para um futuro mais **verde, conectado, inclusivo e próspero** para todos.
+
+# **5 - Diferenciais**
+
+A Lactus destaca-se no mercado pelos seguintes pilares estratégicos:
+
+- **Inovação orientada à realidade:** Desenvolvemos soluções práticas, pensadas para funcionar no contexto real das comunidades africanas.
+- **Sustentabilidade aplicada:** As nossas tecnologias são concebidas para gerar impacto ambiental positivo e promover o uso responsável dos recursos naturais.
+- **Acessibilidade e inclusão:** Criamos soluções adaptadas às condições económicas e sociais locais, garantindo maior alcance e adoção.
+- **Impacto social mensurável:** Cada projeto tem como objetivo melhorar a qualidade de vida, gerar oportunidades e promover o desenvolvimento comunitário.
+- **Escalabilidade:** As soluções são desenhadas para crescer e ser replicadas em diferentes regiões e contextos.
+
+# **6 - Objetivos Estratégicos**
+
+- Desenvolver **produtos e serviços tecnológicos inovadores** nas áreas de energia, saúde e sustentabilidade.
+- Facilitar o acesso de comunidades, empresas e instituições a **soluções eficientes, acessíveis e inteligentes**.
+- Promover a **transformação digital e energética** em África.
+- Posicionar a Lactus como um **hub de inovação**, capaz de inspirar e liderar iniciativas de impacto no continente.
+- Estabelecer **parcerias estratégicas** com organizações públicas e privadas para ampliar o alcance das soluções.
+
+# **7 - Nossos Valores**
+
+Os valores da Lactus orientam todas as nossas decisões e ações:
+
+- **Inovação:** Procuramos constantemente novas formas de resolver problemas através da tecnologia.
+- **Sustentabilidade:** Desenvolvemos soluções que respeitam o meio ambiente e promovem um futuro mais equilibrado.
+- **Responsabilidade Social:** Trabalhamos para gerar impacto positivo na vida das pessoas, especialmente nas comunidades mais vulneráveis.
+- **Integridade:** Atuamos com ética, transparência e responsabilidade em todas as nossas relações.
+- **Excelência:** Comprometemo-nos com a qualidade e melhoria contínua dos nossos produtos e serviços.
+- **Colaboração:** Valorizamos o trabalho em equipa e parcerias como forma de potencializar resultados e inovação.
+
+# **8 - O Que Fazemos**
+
+Na Lactus, desenvolvemos **soluções tecnológicas inovadoras** focadas em áreas estratégicas como:
+
+- **Energia sustentável**
+- **Saúde digital**
+- **Tecnologias ambientais**
+- **Sistemas inteligentes e IoT**
+
+Além disso, oferecemos **consultoria tecnológica e estratégica**, apoiando organizações na implementação de sistemas modernos, eficientes e sustentáveis.
+
+O nosso foco é criar soluções que sejam:
+
+- **Funcionais** – que resolvam problemas reais de forma eficaz
+- **Simples** – fáceis de usar e implementar
+- **Acessíveis** – adaptadas à realidade local
+- **Escaláveis** – com potencial de crescimento e expansão
+
+Acima de tudo, trabalhamos para garantir que cada solução desenvolvida tenha um **impacto positivo, duradouro e transformador na vida das pessoas e comunidades**.
+
+# **9  - Projetos Desenvolvidos**
+
+A Lactus desenvolve soluções tecnológicas com foco em impacto real, inovação e sustentabilidade. Entre os nossos principais projetos destacam-se:
+
+### **Saúde+** *(Projeto Vencedor do NASA Space Apps Challenge Luanda 2025)*
+
+O **Saúde+** é uma plataforma digital inteligente desenvolvida para **prever e prevenir surtos de doenças**, especialmente em regiões vulneráveis.
+
+A solução integra diferentes fontes de dados, incluindo:
+
+- **Dados climáticos da NASA**
+- **Dados de saúde pública** (OMS / MISAU)
+- **Informações geoespaciais**
+
+Através da coleta e processamento de dados em tempo real, o sistema utiliza **algoritmos de Inteligência Artificial e modelos de análise de risco** para identificar padrões e prever **zonas com maior probabilidade de surtos**.
+
+Os resultados são apresentados por meio de **mapas interativos e alertas visuais**, permitindo que autoridades de saúde, organizações e comunidades tenham acesso rápido a informações críticas.
+
+### **Objetivo**
+
+Capacitar decisores e comunidades com informação estratégica, possibilitando **ações preventivas eficazes**, tais como:
+
+- Campanhas de sensibilização
+- Eliminação de focos de mosquitos
+- Planeamento de respostas emergenciais
+- Melhor alocação de recursos de saúde
+
+### **Impacto**
+
+O Saúde+ contribui para:
+
+- **Redução do risco de surtos epidémicos**
+- **Melhoria da resposta do sistema de saúde**
+- **Proteção de comunidades vulneráveis**
+- **Promoção de saúde preventiva baseada em dados**
+
+### **Lumi – Energia Sustentável a Partir da Natureza**
+
+O **Lumi** é uma solução inovadora que transforma plantas em fontes de energia limpa, utilizando a interação entre **microrganismos do solo e as raízes** para gerar eletricidade.
+
+Este sistema permite alimentar pequenos dispositivos, como iluminação pública em paragens, zonas rurais ou comunidades com acesso limitado à energia elétrica.
+
+O projeto destaca-se por:
+
+- Utilizar **energia 100% limpa e renovável**
+- Ser uma solução **ecológica e sustentável**
+- Promover **acesso à energia em áreas remotas**
+- Contribuir para a redução da dependência de combustíveis fósseis
+
+O Lumi representa a visão da Lactus de criar soluções que unem **natureza, tecnologia e impacto social**.
+
+Opções de Botões: Comprar ou Adquiri Produto
+
+# **10 - Nossa Equipa**
+
+A Lactus é formada por uma equipa jovem, multidisciplinar e comprometida com a inovação e o impacto social:
+
+- **Anabelmo Feijó** – CEO & Fundador
+Responsável pela visão estratégica, liderança e desenvolvimento da startup.
+- **Israel Pedro** – CTO & Fundador
+Lidera a área tecnológica, desenvolvimento de sistemas e inovação.
+- **Catarina Monteiro** – Gestora de Projetos & Founder
+Responsável pela organização, planeamento e execução dos projetos.
+- **João Tambue** – Desenvolvedor
+- **Leria Bumba** – Desenvolvedora
+- **Luísa Timóteo** – Desenvolvedora
+- **Paulo Sanguli** – Desenvolvedor
+- **Paulo Sanguli** - Desenvolvedor
+
+# **11 - Prémios e Conquistas**
+
+Ao longo do seu percurso, a Lactus tem vindo a destacar-se pelo seu espírito inovador, capacidade técnica e impacto social, conquistando reconhecimento em importantes competições e iniciativas:
+
+### 🏆 **NASA Space Apps Challenge Luanda 2025**
+
+**1.º Lugar (Equipa Lactus – Projeto Saúde+)**
+
+A Lactus conquistou o primeiro lugar nesta que é uma das maiores competições globais de inovação, destacando-se entre várias equipas pela criação do **Saúde+**, uma solução tecnológica para previsão e prevenção de surtos de doenças com base em dados climáticos, de saúde pública e geoespaciais.
+
+Esta conquista valida a capacidade da equipa em desenvolver **soluções inovadoras, relevantes e com impacto real**, alinhadas com desafios globais.
+
+### 🏆 **Prémios Tigra Nova Garra 2026**
+
+Reconhecimento atribuído ao nosso projecto Lumi pelo seu **potencial inovador, espírito empreendedor e impacto positivo na sociedade**, reforçando o posicionamento da startup como uma das promessas emergentes no ecossistema tecnológico angolano.

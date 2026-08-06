@@ -1,7 +1,4 @@
-export type WorldCleanerCardId =
-  | 'protectAnimals'
-  | 'cleanupEnvironment'
-  | 'protectAndCleanup'
+export type WorldCleanerCardId = 'innovation' | 'sustainability' | 'socialImpact'
 
 export type WorldCleanerCardVariant = 'neutral' | 'lime'
 
@@ -13,17 +10,17 @@ export type WorldCleanerCardData = {
 
 export const worldCleanerCards: WorldCleanerCardData[] = [
   {
-    id: 'protectAnimals',
+    id: 'innovation',
     photo: { src: '/world-cleaner/card1-photos.png' },
     variant: 'neutral',
   },
   {
-    id: 'cleanupEnvironment',
+    id: 'sustainability',
     photo: { src: '/world-cleaner/card2-photos.png' },
     variant: 'lime',
   },
   {
-    id: 'protectAndCleanup',
+    id: 'socialImpact',
     photo: { src: '/world-cleaner/card3-photos.png' },
     variant: 'neutral',
   },

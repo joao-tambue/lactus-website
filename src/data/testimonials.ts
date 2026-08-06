@@ -1,7 +1,7 @@
 export type TestimonialCardId =
-  | 'adilsonCamacho'
-  | 'joaoRabiMendes'
-  | 'joaoTambue'
+  | 'catarinaMonteiro'
+  | 'anabelmoFeijo'
+  | 'israelPedro'
 
 export type TestimonialCardData = {
   id: TestimonialCardId
@@ -12,20 +12,20 @@ export type TestimonialCardData = {
 
 export const testimonials: TestimonialCardData[] = [
   {
-    id: 'adilsonCamacho',
-    name: 'Adilson Camacho',
+    id: 'catarinaMonteiro',
+    name: 'Catarina Monteiro',
     avatarSrc: '/testimonials/avatar-1.png',
     variant: 'light',
   },
   {
-    id: 'joaoRabiMendes',
-    name: 'João Rabi Mendes',
+    id: 'anabelmoFeijo',
+    name: 'Anabelmo Feijó',
     avatarSrc: '/testimonials/avatar-2.png',
     variant: 'dark',
   },
   {
-    id: 'joaoTambue',
-    name: 'João Tambue',
+    id: 'israelPedro',
+    name: 'Israel Pedro',
     avatarSrc: '/testimonials/avatar-3.png',
     variant: 'light',
   },

@@ -1,8 +1,8 @@
 export const common = {
   meta: {
-    title: 'Lactus — Reciclagem Eficiente de Sucata',
+    title: 'Lactus — Inovação Tecnológica Sustentável',
     description:
-      'Descubra serviços eficientes de reciclagem de sucata no seu bairro. Soluções convenientes e fiáveis para empresas e particulares.',
+      'A Lactus é uma startup angolana de base tecnológica que desenvolve soluções inovadoras orientadas para a sustentabilidade, com o propósito de melhorar a qualidade de vida das pessoas e preservar o meio ambiente.',
   },
   header: {
     nav: {
@@ -23,11 +23,11 @@ export const common = {
   },
   cta: { getStarted: 'Começar' },
   marquee: {
-    ecoFriendly: 'Amigo do planeta',
-    conserve: 'Conserve o planeta',
-    save: 'Salve o planeta',
-    envFriendly: 'Ambientalmente amigável',
-    green: 'Planeta mais verde',
+    ecoFriendly: 'Inovação',
+    conserve: 'Sustentabilidade',
+    save: 'Impacto Social',
+    envFriendly: 'Tecnologia para Todos',
+    green: 'Futuro Mais Verde',
   },
   readMore: 'Ler mais',
   notFound: {
