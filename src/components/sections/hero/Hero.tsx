@@ -1,3 +1,4 @@
+import { Trans, useTranslation } from 'react-i18next'
 import { FloatingImage } from './FloatingImage'
 import { StarIcon } from '@/components/icons'
 import longArrow from '@/assets/icons/long-arrow.svg'
@@ -8,6 +9,8 @@ import { floatingImages, galleryItems } from '@/data/hero'
 import { MarqueeStrip } from '@/components/ui/MarqueeStrip'
 
 export function Hero() {
+  const { t } = useTranslation('home')
+
   return (
     <section className="relative overflow-hidden px-6 pt-16 sm:px-10 lg:pt-20">
       <div className="relative mx-auto max-w-284.75">
@@ -18,31 +21,29 @@ export function Hero() {
 
         {floatingImages.map((img) => (
           <FloatingImage
-            key={img.alt}
+            key={img.id}
             src={img.src}
-            alt={img.alt}
+            alt={t(`hero.floatingImages.${img.id}`)}
             className={img.className}
           />
         ))}
 
         {/* Headline */}
         <h1 className="text-balance text-center font-sans text-[42px] font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl lg:text-[68px]">
-          Efficient{' '}
-          <span className="inline-block rounded-full bg-lime-300 px-4 py-1 sm:px-5">
-            Scrap
-          </span>{' '}
-          Recycling
-          <br />
-          Services Near You
+          <Trans
+            t={t}
+            i18nKey="hero.headline"
+            components={{
+              highlight: (
+                <span className="inline-block rounded-full bg-lime-300 px-4 py-1 sm:px-5" />
+              ),
+            }}
+          />
         </h1>
 
         {/* Supporting copy */}
         <p className="mx-auto mt-6 max-w-200 text-balance text-center text-sm leading-relaxed text-neutral-500 sm:text-base">
-          Discover efficient scrap recycling services right in your
-          neighborhood! We&apos;re dedicated to providing convenient and
-          reliable scrap recycling solutions to businesses and individuals
-          alike. Whether you have metal, paper, plastic, or electronics to
-          recycle, our experienced team is here to help.
+          {t('hero.supporting')}
         </p>
 
         {/* CTA */}
@@ -50,7 +51,7 @@ export function Hero() {
           <CTAButton />
           <img
             src={linhcaCurva}
-            alt="Linha curva"
+            alt={t('hero.curveAlt')}
             className="absolute top-2 left-[calc(65%-1rem)] hidden sm:block"
           />
         </div>
@@ -66,13 +67,16 @@ export function Hero() {
                 className="flex aspect-138/100 flex-col justify-between rounded-2xl bg-emerald-950 p-5 text-white sm:aspect-auto sm:h-20 lg:h-32.5"
               >
                 <p className="text-lg text-center font-semibold leading-snug">
-                  Nasa Space
-                  <br />
-                  Apps Winner 2025
+                  <Trans
+                    t={t}
+                    i18nKey="hero.nasaCard"
+                    values={{ year: '2025' }}
+                    components={{ br: <br /> }}
+                  />
                 </p>
                 <img
                   src={longArrow}
-                  alt="Seta longa"
+                  alt={t('hero.longArrowAlt')}
                 />
               </div>
             )
@@ -86,18 +90,20 @@ export function Hero() {
               >
                 <img
                   src="/hero/internacional-img.png"
-                  alt="Dia Internacional do Ambiente"
+                  alt={t('hero.badgeImageAlt')}
                   className="size-full object-cover"
                   loading="lazy"
                 />
                 <span className="absolute left-3 top-5 flex flex-col justify-center items-center gap-1.5 text-lg text-center font-medium text-white">
                   <img
                     src={internacionalLogo}
-                    alt="Logo do Dia Internacional do Ambiente"
+                    alt={t('hero.badgeLogoAlt')}
                   />
-                  PTNG Winners at
-                  <br />
-                  Tech & Innovation
+                  <Trans
+                    t={t}
+                    i18nKey="hero.ptngBadge"
+                    components={{ br: <br /> }}
+                  />
                 </span>
               </div>
             )
@@ -114,7 +120,7 @@ export function Hero() {
             >
               <img
                 src={item.src}
-                alt={item.alt}
+                alt={t(`hero.gallery.${item.altKey}`)}
                 className="size-full object-cover"
                 loading="lazy"
               />

@@ -1,14 +1,18 @@
 import type { ButtonHTMLAttributes } from 'react'
+import { useTranslation } from 'react-i18next'
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   label?: string
 }
 
 export function CTAButton({
-  label = 'Get Started',
+  label,
   className = '',
   ...props
 }: ButtonProps) {
+  const { t } = useTranslation('common')
+  const resolvedLabel = label ?? t('cta.getStarted')
+
   return (
     <button
       type="button"
@@ -21,7 +25,7 @@ export function CTAButton({
       {...props}
     >
       <span className="px-6 pl-8 py-3.5 text-[14px] font-medium leading-none text-ink-950">
-        {label}
+        {resolvedLabel}
       </span>
 
       <span className="absolute -right-7 top-0 flex h-11 w-11 items-center justify-center rounded-full bg-forest-950">

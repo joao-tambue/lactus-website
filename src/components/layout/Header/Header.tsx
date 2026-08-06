@@ -1,21 +1,22 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import {
-  ChevronDownIcon,
   CloseIcon,
-  GlobeIcon,
   LogoMark,
   MenuIcon,
   SearchIcon,
 } from '@/components/icons'
+import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher'
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Success Stories', href: '#success-stories' },
-  { label: 'Resources', href: '#resources' },
-  { label: 'Solutions', href: '#solutions' },
-]
+  { key: 'about', href: '#about' },
+  { key: 'successStories', href: '#success-stories' },
+  { key: 'resources', href: '#resources' },
+  { key: 'solutions', href: '#solutions' },
+] as const
 
 export function Header() {
+  const { t } = useTranslation('common')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -32,35 +33,28 @@ export function Header() {
         <nav className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
             <a
-              key={link.label}
+              key={link.key}
               href={link.href}
               className="text-sm font-medium text-neutral-950 transition-colors hover:text-neutral-600"
             >
-              {link.label}
+              {t(`header.nav.${link.key}`)}
             </a>
           ))}
         </nav>
 
         <div className="hidden items-center gap-6 lg:flex">
-          <button
-            type="button"
-            className="flex items-center gap-1.5 text-sm font-medium text-neutral-950"
-          >
-            <GlobeIcon className="size-4" />
-            English
-            <ChevronDownIcon className="size-4" />
-          </button>
+          <LanguageSwitcher />
 
           <a
             href="#sign-up"
             className="rounded-full bg-neutral-950 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-neutral-800"
           >
-            Sign Up
+            {t('header.signUp')}
           </a>
 
           <button
             type="button"
-            aria-label="Pesquisar"
+            aria-label={t('header.search.aria')}
             className="flex size-10 items-center justify-center rounded-full text-neutral-950 transition-colors hover:bg-neutral-100"
           >
             <SearchIcon className="size-5" />
@@ -69,7 +63,7 @@ export function Header() {
 
         <button
           type="button"
-          aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-label={isMenuOpen ? t('header.menu.closeAria') : t('header.menu.openAria')}
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((open) => !open)}
           className="flex size-10 items-center justify-center rounded-full text-neutral-950 lg:hidden"
@@ -87,31 +81,24 @@ export function Header() {
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
-                key={link.label}
+                key={link.key}
                 href={link.href}
                 className="text-sm font-medium text-neutral-950"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {link.label}
+                {t(`header.nav.${link.key}`)}
               </a>
             ))}
           </nav>
 
           <div className="mt-6 flex items-center justify-between gap-4">
-            <button
-              type="button"
-              className="flex items-center gap-1.5 text-sm font-medium text-neutral-950"
-            >
-              <GlobeIcon className="size-4" />
-              English
-              <ChevronDownIcon className="size-4" />
-            </button>
+            <LanguageSwitcher />
 
             <a
               href="#sign-up"
               className="rounded-full bg-neutral-950 px-6 py-2.5 text-sm font-semibold text-white"
             >
-              Sign Up
+              {t('header.signUp')}
             </a>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { ArrowUpRightIcon } from '@/components/icons'
 import { type WorldCleanerCardData } from '@/data/worldCleaner'
 
@@ -12,11 +13,12 @@ const SHAPE_FILL = {
 } as const
 
 export function WorldCleanerCard({
-  title,
-  description,
+  id,
   photo,
   variant = 'neutral',
 }: WorldCleanerCardData) {
+  const { t } = useTranslation('home')
+
   return (
     <div className="relative h-76 w-115 shrink-0">
       <svg
@@ -33,10 +35,10 @@ export function WorldCleanerCard({
         <div className="flex flex-col items-start gap-6">
           <div className="flex flex-col items-start gap-4">
             <h3 className="w-49.75 text-2xl font-semibold leading-[1.2] text-black">
-              {title}
+              {t(`worldCleaner.cards.${id}.title`)}
             </h3>
             <p className="w-47.75 text-base leading-[1.4] text-black/65">
-              {description}
+              {t(`worldCleaner.cards.${id}.description`)}
             </p>
           </div>
 
@@ -44,7 +46,7 @@ export function WorldCleanerCard({
             href="#read-more"
             className="flex items-center gap-1.75 text-base font-medium text-ink-900 transition-opacity hover:opacity-70"
           >
-            Read More
+            {t('readMore', { ns: 'common' })}
             <span className="flex size-4 shrink-0 items-center justify-center rounded-full border border-line-400">
               <ArrowUpRightIcon className="size-2.5" />
             </span>
@@ -53,7 +55,7 @@ export function WorldCleanerCard({
 
         <img
           src={photo.src}
-          alt={photo.alt}
+          alt={t(`worldCleaner.cards.${id}.photoAlt`)}
           className="h-61 w-46.25 shrink-0 object-contain"
           loading="lazy"
         />
