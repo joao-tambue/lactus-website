@@ -14,7 +14,9 @@ export function useCarousel({ itemCount, gap = 24 }: UseCarouselOptions) {
   const trackRef = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(
+    () => Math.min(1, Math.max(0, itemCount - 1)),
+  )
   const indexRef = useRef(index)
   useEffect(() => {
     indexRef.current = index
