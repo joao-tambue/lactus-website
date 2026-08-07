@@ -10,7 +10,7 @@ const CARD_GAP = 24
 export default function Team() {
   const { t } = useTranslation('home')
 
-  const { trackRef, containerRef, canGoPrev, canGoNext, next, prev } =
+  const { trackRef, containerRef, index, canGoPrev, canGoNext, next, prev } =
     useCarousel({ itemCount: teamMembers.length, gap: CARD_GAP })
 
   return (
@@ -33,14 +33,22 @@ export default function Team() {
       {/* Carrossel */}
       <div ref={containerRef} className="relative overflow-hidden">
         <div ref={trackRef} className="flex gap-6" style={{ willChange: 'transform' }}>
-          {teamMembers.map((member) => (
-            <div
-              key={member.id}
-              className="w-full flex-shrink-0 sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)]"
-            >
-              <TeamMemberCard member={member} />
-            </div>
-          ))}
+          {teamMembers.map((member, cardIndex) => {
+            const isActive = index === cardIndex
+            return (
+              <div
+                key={member.id}
+                className={`
+                  w-full flex-shrink-0
+                  sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)]
+                  transition-transform duration-700 ease-out
+                  ${isActive ? 'relative z-10 scale-105 opacity-100' : 'scale-90 opacity-70'}
+                `}
+              >
+                <TeamMemberCard member={member} />
+              </div>
+            )
+          })}
         </div>
       </div>
 
