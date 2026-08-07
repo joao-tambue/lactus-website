@@ -142,24 +142,28 @@ export const home = {
         imageAlt: 'Retrato de Israel Pedro',
       },
       catarinaMonteiro: {
-        role: 'Gestora de Projetos & Founder',
+        role: 'Gestora de Projetos',
         imageAlt: 'Retrato de Catarina Monteiro',
       },
+      luisaTimoteo: {
+        role: 'Robótica e Eletrónica',
+        imageAlt: 'Retrato de Luísa Timóteo',
+      },
       joaoTambue: {
-        role: 'Desenvolvedor',
+        role: 'Desenvolvedor de Software',
         imageAlt: 'Retrato de João Tambue',
       },
       leriaBumba: {
-        role: 'Desenvolvedora',
+        role: 'Robótica e Eletrónica',
         imageAlt: 'Retrato de Leria Bumba',
       },
-      luisaTimoteo: {
-        role: 'Desenvolvedora',
-        imageAlt: 'Retrato de Luísa Timóteo',
-      },
       pauloSanguli: {
-        role: 'Desenvolvedor',
+        role: 'Desenvolvedor de Software Backend',
         imageAlt: 'Retrato de Paulo Sanguli',
+      },
+      lourencoCardoso: {
+        role: 'Desenvolvedor de Software Frontend & Mobile',
+        imageAlt: 'Retrato de Lourenco Cardoso',
       },
     },
   },

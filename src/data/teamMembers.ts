@@ -17,6 +17,11 @@ export const teamMembers: TeamMember[] = [
     imageSrc: '/team/front.png',
   },
   {
+    id: 'luisaTimoteo',
+    name: 'Luísa Timóteo',
+    imageSrc: '/team/front.png',
+  },
+  {
     id: 'joaoTambue',
     name: 'João Tambue',
     imageSrc: '/team/front.png',
@@ -27,13 +32,13 @@ export const teamMembers: TeamMember[] = [
     imageSrc: '/team/front.png',
   },
   {
-    id: 'luisaTimoteo',
-    name: 'Luísa Timóteo',
+    id: 'pauloSanguli',
+    name: 'Paulo Sanguli',
     imageSrc: '/team/front.png',
   },
   {
-    id: 'pauloSanguli',
-    name: 'Paulo Sanguli',
+    id: 'lourencoCardoso',
+    name: 'Lourenco Cardoso',
     imageSrc: '/team/front.png',
   },
 ]

@@ -6,6 +6,7 @@ export type TeamMemberId =
   | 'leriaBumba'
   | 'luisaTimoteo'
   | 'pauloSanguli'
+  | 'lourencoCardoso'
 
 export interface TeamMember {
   /** Identificador único (usado como key do React e nas chaves i18n) */

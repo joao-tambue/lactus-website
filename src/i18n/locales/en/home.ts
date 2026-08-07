@@ -141,24 +141,28 @@ export const home = {
         imageAlt: 'Portrait of Israel Pedro',
       },
       catarinaMonteiro: {
-        role: 'Project Manager & Founder',
+        role: 'Project Manager',
         imageAlt: 'Portrait of Catarina Monteiro',
       },
       joaoTambue: {
-        role: 'Developer',
+        role: 'Software Developer',
         imageAlt: 'Portrait of João Tambue',
       },
       leriaBumba: {
-        role: 'Developer',
+        role: 'Robotics and Electronics',
         imageAlt: 'Portrait of Leria Bumba',
       },
       luisaTimoteo: {
-        role: 'Developer',
+        role: 'Robotics and Electronics',
         imageAlt: 'Portrait of Luísa Timóteo',
       },
       pauloSanguli: {
-        role: 'Developer',
+        role: 'Backend Software Developer',
         imageAlt: 'Portrait of Paulo Sanguli',
+      },
+      lourencoCardoso: {
+        role: 'Frontend & Mobile Software Developer',
+        imageAlt: 'Portrait of Lourenco Cardoso',
       },
     },
   },

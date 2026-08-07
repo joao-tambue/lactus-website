@@ -150,13 +150,13 @@ A Lactus é formada por uma equipa jovem, multidisciplinar e comprometida com a 
 Responsável pela visão estratégica, liderança e desenvolvimento da startup.
 - **Israel Pedro** – CTO & Fundador
 Lidera a área tecnológica, desenvolvimento de sistemas e inovação.
-- **Catarina Monteiro** – Gestora de Projetos & Founder
+- **Catarina Monteiro** – Gestora de Projetos
 Responsável pela organização, planeamento e execução dos projetos.
-- **João Tambue** – Desenvolvedor
-- **Leria Bumba** – Desenvolvedora
-- **Luísa Timóteo** – Desenvolvedora
-- **Paulo Sanguli** – Desenvolvedor
-- **Paulo Sanguli** - Desenvolvedor
+- **João Tambue** – Desenvolvedor de Software
+- **Leria Bumba** – Robotica e Eletronica
+- **Luísa Timóteo** – Robotica e Eletronica
+- **Paulo Sanguli** – Desenvolvedor de Software Backend
+- **Lourenco Cardoso** - Desenvolvedor de Software Frontend & Mobile
 
 # **11 - Prémios e Conquistas**
 
