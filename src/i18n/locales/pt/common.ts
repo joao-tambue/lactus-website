@@ -11,7 +11,7 @@ export const common = {
       resources: 'Recursos',
       solutions: 'Soluções',
     },
-    signUp: 'Criar conta',
+    signUp: 'Entrar em Contato',
     search: { aria: 'Pesquisar' },
     menu: { openAria: 'Abrir menu', closeAria: 'Fechar menu' },
   },
@@ -21,7 +21,7 @@ export const common = {
     en: 'English',
     pt: 'Português',
   },
-  cta: { getStarted: 'Começar' },
+  cta: { getStarted: 'Contatar' },
   marquee: {
     ecoFriendly: 'Inovação',
     conserve: 'Sustentabilidade',
