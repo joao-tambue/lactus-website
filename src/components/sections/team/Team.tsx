@@ -1,71 +1,23 @@
-import { useEffect, useRef } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import TeamMemberCard from '@/components/ui/TeamMemberCard'
 import { useCarousel } from '@/hooks/useCarousel'
 import { teamMembers } from '@/data/teamMembers'
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
-
-gsap.registerPlugin(ScrollTrigger)
 
 // Precisa bater com a classe "gap-6" (24px) usada no track abaixo
 const CARD_GAP = 24
 
 export default function Team() {
   const { t } = useTranslation('home')
-  const sectionRef = useRef<HTMLElement>(null)
-  const headingRef = useRef<HTMLDivElement>(null)
 
   const { trackRef, containerRef, canGoPrev, canGoNext, next, prev } =
     useCarousel({ itemCount: teamMembers.length, gap: CARD_GAP })
 
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Entrada do título + parágrafo
-      gsap.from(headingRef.current?.children ?? [], {
-        opacity: 0,
-        y: 24,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 75%',
-        },
-      })
-
-      // Entrada dos cards do carrossel
-      const cards = trackRef.current?.children
-      if (cards && cards.length) {
-        gsap.from(cards, {
-          opacity: 0,
-          y: 32,
-          duration: 0.8,
-          stagger: 0.12,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: 'top 85%',
-          },
-        })
-      }
-    }, sectionRef)
-
-    return () => ctx.revert()
-  }, [trackRef, containerRef])
-
   return (
-    <section
-      ref={sectionRef}
-      className="mx-auto w-full max-w-[1800px] px-6 py-20 sm:px-10 lg:px-16 lg:py-28"
-    >
+    <section className="mx-auto w-full max-w-[1800px] px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
       {/* Cabeçalho */}
-      <div
-        ref={headingRef}
-        className="mb-14 flex flex-col justify-between gap-8 lg:mb-20 lg:flex-row lg:items-start"
-      >
-        <h2 className="text-[2.75rem] font-medium leading-[1.05] tracking-tight text-neutral-900 sm:text-6xl">
+      <div className="mb-14 flex flex-col justify-between gap-8 lg:mb-20 lg:flex-row lg:items-start">
+        <h2 className="text-[2.75rem] text-balance font-semibold leading-[1.05] tracking-tight text-neutral-900 sm:text-[48px]">
           <Trans
             t={t}
             i18nKey="team.title"
