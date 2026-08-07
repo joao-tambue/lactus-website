@@ -31,7 +31,7 @@ export default function Team() {
       </div>
 
       {/* Carrossel */}
-      <div ref={containerRef} className="relative overflow-hidden">
+      <div ref={containerRef} className="relative overflow-hidden py-12">
         <div ref={trackRef} className="flex gap-6" style={{ willChange: 'transform' }}>
           {teamMembers.map((member, cardIndex) => {
             const isActive = index === cardIndex
@@ -42,7 +42,7 @@ export default function Team() {
                   w-full flex-shrink-0
                   sm:w-[calc((100%-24px)/2)] lg:w-[calc((100%-48px)/3)]
                   transition-transform duration-700 ease-out
-                  ${isActive ? 'relative z-10 scale-105 opacity-100' : 'scale-90 opacity-70'}
+                  ${isActive ? 'relative z-10 scale-110 opacity-100' : 'scale-90 opacity-70'}
                 `}
               >
                 <TeamMemberCard member={member} />
