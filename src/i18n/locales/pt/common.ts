@@ -1,6 +1,6 @@
 export const common = {
   meta: {
-    title: 'Lactus — Inovação Tecnológica Sustentável',
+    title: 'Lactus | Inovação Tecnológica Sustentável',
     description:
       'A Lactus é uma startup angolana de base tecnológica que desenvolve soluções inovadoras orientadas para a sustentabilidade, com o propósito de melhorar a qualidade de vida das pessoas e preservar o meio ambiente.',
   },

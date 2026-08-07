@@ -1,6 +1,6 @@
 export const common = {
   meta: {
-    title: 'Lactus — Sustainable Technology Innovation',
+    title: 'Lactus | Sustainable Technology Innovation',
     description:
       "Lactus is an Angolan tech startup developing innovative sustainability-driven solutions, with the purpose of improving people's quality of life and preserving the environment.",
   },
