@@ -34,4 +34,28 @@ export const common = {
     title: 'Page not found',
     back: 'Back to home',
   },
+  footer: {
+    tagline:
+      'Angolan tech startup developing innovative solutions focused on sustainability and social impact.',
+    companyTitle: 'Company',
+    companyLinks: {
+      about: 'About Us',
+      team: 'Team',
+      contact: 'Contact',
+    },
+    solutionsTitle: 'Solutions',
+    solutionsLinks: {
+      energy: 'Sustainable Energy',
+      health: 'Digital Health',
+      environment: 'Environmental Technologies',
+      iot: 'Smart Systems',
+    },
+    social: {
+      facebook: "Lactus' Facebook",
+      instagram: "Lactus' Instagram",
+      linkedin: "Lactus' LinkedIn",
+    },
+    rights: 'All rights reserved.',
+    madeIn: 'Made in Angola',
+  },
 } as const

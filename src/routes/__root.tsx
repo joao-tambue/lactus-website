@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
+import { Footer } from '@/components/layout/Footer'
 
 export const Route = createRootRoute({
   component: RootLayout,
@@ -20,9 +21,12 @@ function RootLayout() {
   }, [t, i18n.language])
 
   return (
-    <main className="min-h-svh">
-      <Outlet />
-    </main>
+    <div className="flex min-h-svh flex-col">
+      <main className="flex-1">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   )
 }
 

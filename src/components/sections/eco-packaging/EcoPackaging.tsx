@@ -56,7 +56,7 @@ export function EcoPackaging() {
                   className="size-9"
                 />
               </div>
-              <p className="absolute left-1/2 top-46.125 w-max -translate-x-1/2 -translate-y-1/2 text-center text-base font-medium leading-[1.2] text-white">
+              <p className="absolute left-1/2 top-46 w-max -translate-x-1/2 -translate-y-1/2 text-center text-[28px] font-medium leading-[1.2] text-white">
                 {t('ecoPackaging.brandName')}
               </p>
             </div>
