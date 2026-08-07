@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
 import { ArrowUpRightIcon } from '@/components/icons'
 import { CTAButton } from '@/components/ui/Button'
 import { initiatives } from '@/data/initiatives'
 
 export function Initiatives() {
+  const { t } = useTranslation('home')
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
   const imageRefs = useRef<(HTMLDivElement | null)[]>([])
   const prevIndexRef = useRef<number | null>(null)
@@ -49,7 +51,7 @@ export function Initiatives() {
     <section className="bg-neutral-100 py-20 lg:py-28">
       <div className="mx-auto max-w-5xl px-6 sm:px-10">
         <h2 className="text-center text-[48px] font-bold tracking-tight text-neutral-950 sm:text-5xl">
-          Our Initiatives for 2024
+          {t('initiatives.title')}
         </h2>
       </div>
 
@@ -62,7 +64,7 @@ export function Initiatives() {
 
           return (
             <li
-              key={item.title}
+              key={item.id}
               className={`relative border-t border-neutral-200 last:border-b ${
                 isActive ? 'z-20' : 'z-0'
               }`}
@@ -81,7 +83,7 @@ export function Initiatives() {
                       isActive ? 'text-white' : 'text-neutral-950'
                     }`}
                   >
-                    {item.title}
+                    {t(`initiatives.items.${item.id}.title`)}
                   </span>
 
                   <span
@@ -89,7 +91,7 @@ export function Initiatives() {
                       isActive ? 'text-white/80' : 'text-neutral-500'
                     }`}
                   >
-                    {item.description}
+                    {t(`initiatives.items.${item.id}.description`)}
                   </span>
 
                   <span
@@ -112,7 +114,7 @@ export function Initiatives() {
                   >
                     <img
                       src={item.image}
-                      alt={item.alt}
+                      alt={t(`initiatives.items.${item.id}.imageAlt`)}
                       className="size-full object-cover"
                       loading="lazy"
                     />

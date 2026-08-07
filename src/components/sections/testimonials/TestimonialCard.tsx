@@ -1,11 +1,10 @@
 import { forwardRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import { type TestimonialCardData } from '@/data/testimonials'
 
 export const TestimonialCard = forwardRef<HTMLDivElement, TestimonialCardData>(
-  function TestimonialCard(
-    { quote, name, role, avatarSrc, avatarAlt, variant = 'light' },
-    ref,
-  ) {
+  function TestimonialCard({ id, name, avatarSrc, variant = 'light' }, ref) {
+    const { t } = useTranslation('home')
     const isDark = variant === 'dark'
 
     return (
@@ -17,7 +16,7 @@ export const TestimonialCard = forwardRef<HTMLDivElement, TestimonialCardData>(
       >
         <img
           src="/testimonials/stars.svg"
-          alt="Avaliação de 5 estrelas"
+          alt={t('testimonials.starsAlt')}
           className="h-7 w-39"
         />
 
@@ -26,20 +25,22 @@ export const TestimonialCard = forwardRef<HTMLDivElement, TestimonialCardData>(
             isDark ? 'text-white' : 'text-ink-700'
           }`}
         >
-          {quote}
+          {t(`testimonials.items.${id}.quote`)}
         </p>
 
         <div className="flex items-start gap-3.25">
           <img
             src={avatarSrc}
-            alt={avatarAlt}
+            alt={t(`testimonials.items.${id}.avatarAlt`)}
             className="size-11 shrink-0 rounded-full object-cover"
           />
           <div className="flex flex-col items-start gap-1 text-base leading-[1.4]">
             <p className={`font-medium ${isDark ? 'text-white' : 'text-black'}`}>
               {name}
             </p>
-            <p className={isDark ? 'text-ink-400' : 'text-ink-500'}>{role}</p>
+            <p className={isDark ? 'text-ink-400' : 'text-ink-500'}>
+              {t(`testimonials.items.${id}.role`)}
+            </p>
           </div>
         </div>
       </div>

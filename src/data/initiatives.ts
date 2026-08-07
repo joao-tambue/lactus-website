@@ -1,37 +1,29 @@
+export type InitiativeId =
+  | 'sustainableEnergy'
+  | 'digitalHealth'
+  | 'environmentalTech'
+  | 'smartSystems'
+
 export type Initiative = {
-  title: string
-  description: string
+  id: InitiativeId
   image: string
-  alt: string
 }
 
 export const initiatives: Initiative[] = [
   {
-    title: 'Tree Planting',
-    description:
-      "We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.",
-    image: 'https://picsum.photos/seed/ecoscrap-tree-planting/420/340',
-    alt: 'Voluntários a plantar árvores jovens',
+    id: 'sustainableEnergy',
+    image: 'https://picsum.photos/seed/lactus-energy/420/340',
   },
   {
-    title: 'Beach Cleanup',
-    description:
-      "We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients",
-    image: 'https://picsum.photos/seed/ecoscrap-beach/420/340',
-    alt: 'Praia tropical com águas cristalinas',
+    id: 'digitalHealth',
+    image: 'https://picsum.photos/seed/lactus-health/420/340',
   },
   {
-    title: 'Education Events',
-    description:
-      "We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.",
-    image: 'https://picsum.photos/seed/ecoscrap-education/420/340',
-    alt: 'Workshop educativo sobre reciclagem',
+    id: 'environmentalTech',
+    image: 'https://picsum.photos/seed/lactus-environment/420/340',
   },
   {
-    title: 'Park Cleaning',
-    description:
-      "We offer a comprehensive suite of digital services tailored to meet the diverse needs of our clients.",
-    image: 'https://picsum.photos/seed/ecoscrap-park/420/340',
-    alt: 'Voluntários a limpar um parque',
+    id: 'smartSystems',
+    image: 'https://picsum.photos/seed/lactus-iot/420/340',
   },
 ]

@@ -1,26 +1,33 @@
+import { Trans, useTranslation } from 'react-i18next'
 import { FiberBars } from './FiberBars'
 
 export function EcoPackaging() {
+  const { t } = useTranslation('home')
+
   return (
     <section className="bg-mist-200-soft px-6 py-20 sm:px-10 lg:py-28">
       <div className="mx-auto max-w-307.5">
         <h2 className="mx-auto max-w-177.5 text-balance text-center text-[48px] font-semibold leading-[1.2] text-black">
-          Reducing Plastic Waste Through{' '}
-          <span className="inline-block rounded-full bg-leaf-200 px-8 py-1.5">
-            Eco-Friendly
-          </span>{' '}
-          Packaging
+          <Trans
+            t={t}
+            i18nKey="ecoPackaging.title"
+            components={{
+              highlight: (
+                <span className="inline-block rounded-full bg-leaf-200 px-8 py-1.5" />
+              ),
+            }}
+          />
         </h2>
 
         {/* Fixed-width cards mirror the Figma design 1:1; below `lg` the row
             scrolls horizontally instead of shrinking/distorting the cards. */}
         <div className="-mx-6 mt-15 overflow-x-auto px-6 pb-2 sm:-mx-10 sm:px-10 lg:mx-0 lg:overflow-visible lg:px-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="flex w-max gap-6 lg:w-full lg:justify-center">
-            {/* Card 1 — GreenWarp brand mark over a foliage photo */}
+            {/* Card 1 — Lactus brand mark over a foliage photo */}
             <div className="relative h-89.5 w-66.75 shrink-0 overflow-hidden rounded-2xl">
               <img
                 src="/eco-packaging/card-leaves.png"
-                alt="Folhagem verde escura, imagem de fundo da marca GreenWarp"
+                alt={t('ecoPackaging.brandImageAlt')}
                 className="absolute inset-0 size-full object-cover"
                 loading="lazy"
               />
@@ -49,8 +56,8 @@ export function EcoPackaging() {
                   className="size-9"
                 />
               </div>
-              <p className="absolute left-1/2 top-46.125 w-max -translate-x-1/2 -translate-y-1/2 text-center text-base font-medium leading-[1.2] text-white">
-                GreenWarp
+              <p className="absolute left-1/2 top-46 w-max -translate-x-1/2 -translate-y-1/2 text-center text-[28px] font-medium leading-[1.2] text-white">
+                {t('ecoPackaging.brandName')}
               </p>
             </div>
 
@@ -58,14 +65,14 @@ export function EcoPackaging() {
             <div className="relative h-89.5 w-66.75 shrink-0 overflow-hidden rounded-2xl">
               <img
                 src="/eco-packaging/card-mountains.png"
-                alt="Estrada sinuosa entre montanhas cobertas de nevoeiro"
+                alt={t('ecoPackaging.mountainsImageAlt')}
                 className="absolute inset-0 size-full object-cover"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/36" aria-hidden="true" />
               <div className="absolute inset-x-0 top-29.75 flex flex-col items-center gap-16.5 px-4">
                 <p className="max-w-47 text-center text-xl font-medium leading-[1.5] text-white">
-                  Recycled/renewable/organic fibers.
+                  {t('ecoPackaging.fiberText')}
                 </p>
                 <FiberBars />
               </div>
@@ -79,8 +86,7 @@ export function EcoPackaging() {
                 className="relative size-12"
               />
               <p className="relative w-52.25 text-2xl leading-[1.2] text-forest-600">
-                Our mission is to make sustainable food packaging solutions
-                accessible to everyone
+                {t('ecoPackaging.mission')}
               </p>
               <img
                 src="/eco-packaging/pattern-bg.svg"
@@ -94,13 +100,13 @@ export function EcoPackaging() {
             <div className="relative h-89.5 w-66.75 shrink-0 overflow-hidden rounded-2xl">
               <img
                 src="/eco-packaging/card-pebbles.png"
-                alt="Seixos e folhas molhadas, texturas naturais"
+                alt={t('ecoPackaging.pebblesImageAlt')}
                 className="absolute inset-0 size-full object-cover"
                 loading="lazy"
               />
               <img
                 src="/eco-packaging/recycle-icon.svg"
-                alt="Símbolo de reciclagem"
+                alt={t('ecoPackaging.recycleSymbolAlt')}
                 className="absolute left-24.5 top-35.75 size-18"
               />
             </div>
