@@ -19,11 +19,8 @@ export function EcoPackaging() {
           />
         </h2>
 
-        {/* Fixed-width cards mirror the Figma design 1:1; below `lg` the row
-            scrolls horizontally instead of shrinking/distorting the cards. */}
         <div className="-mx-6 mt-15 overflow-x-auto px-6 pb-2 sm:-mx-10 sm:px-10 lg:mx-0 lg:overflow-visible lg:px-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="flex w-max gap-6 lg:w-full lg:justify-center">
-            {/* Card 1 — Lactus brand mark over a foliage photo */}
             <div className="relative h-89.5 w-66.75 shrink-0 overflow-hidden rounded-2xl">
               <img
                 src="/eco-packaging/card-leaves.png"
@@ -61,7 +58,6 @@ export function EcoPackaging() {
               </p>
             </div>
 
-            {/* Card 2 — misty mountain road with fiber sourcing copy */}
             <div className="relative h-89.5 w-66.75 shrink-0 overflow-hidden rounded-2xl">
               <img
                 src="/eco-packaging/card-mountains.png"
@@ -78,7 +74,6 @@ export function EcoPackaging() {
               </div>
             </div>
 
-            {/* Card 3 — mission statement on solid lime */}
             <div className="relative flex h-89.5 w-66.75 shrink-0 flex-col items-start gap-2 overflow-hidden rounded-2xl bg-leaf-200 px-7.25 py-19.5">
               <img
                 src="/eco-packaging/target-icon.svg"
@@ -96,7 +91,6 @@ export function EcoPackaging() {
               />
             </div>
 
-            {/* Card 4 — pebble texture with recycling mark */}
             <div className="relative h-89.5 w-66.75 shrink-0 overflow-hidden rounded-2xl">
               <img
                 src="/eco-packaging/card-pebbles.png"

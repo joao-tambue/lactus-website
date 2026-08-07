@@ -6,11 +6,6 @@ interface TeamMemberCardProps {
   member: TeamMember
 }
 
-/**
- * Card do carrossel: fundo cinza (gradiente), nome e cargo alinhados
- * à esquerda/embaixo, e a imagem da pessoa (PNG sem fundo) ancorada
- * na parte inferior direita do card.
- */
 const TeamMemberCard = forwardRef<HTMLDivElement, TeamMemberCardProps>(
   ({ member }, ref) => {
     const { t } = useTranslation('home')
@@ -25,7 +20,6 @@ const TeamMemberCard = forwardRef<HTMLDivElement, TeamMemberCardProps>(
           aspect-[4/5] sm:aspect-[5/6] lg:aspect-[16/13]
         "
       >
-        {/* Nome e cargo */}
         <div className="absolute inset-x-0 bottom-0 z-10 p-6 sm:p-7 lg:p-9">
           <h3
             className="
@@ -48,7 +42,6 @@ const TeamMemberCard = forwardRef<HTMLDivElement, TeamMemberCardProps>(
           </p>
         </div>
 
-        {/* Imagem da pessoa — PNG sem fundo */}
         <img
           src={member.imageSrc}
           alt={t(`team.members.${member.id}.imageAlt`)}

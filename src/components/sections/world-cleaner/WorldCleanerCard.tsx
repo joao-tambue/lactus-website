@@ -2,8 +2,6 @@ import { useTranslation } from 'react-i18next'
 import { ArrowUpRightIcon } from '@/components/icons'
 import { type WorldCleanerCardData } from '@/data/worldCleaner'
 
-// Same blob path exported from Figma (node 173:817), reused for every card —
-// only the fill color changes between the neutral and lime variants.
 const CARD_SHAPE_PATH =
   'M459.877 265.238V144.741C459.959 144.084 460.001 143.415 460.001 142.735V16C460.001 7.16344 452.838 0 444.001 0H185.955C172.137 0 158.845 15.7961 145.026 15.7961H28.001C12.537 15.7961 0.000976562 28.3321 0.000976562 43.7961V166.646C0.000326083 166.706 0 166.765 0 166.825V288C0 296.837 7.16345 304 16 304H239.671C251.522 304 262.742 293.238 274.593 293.238H431.877C447.34 293.238 459.877 280.702 459.877 265.238Z'
 

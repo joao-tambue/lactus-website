@@ -52,7 +52,7 @@ export function useCarousel({ itemCount, gap = 24 }: UseCarouselOptions) {
   const next = useCallback(() => goTo(index + 1), [goTo, index])
   const prev = useCallback(() => goTo(index - 1), [goTo, index])
 
-  // Centra a card ativa na montagem e ao redimensionar (sem animação)
+  // Centra a card ativa na montagem e ao redimensionar
   useLayoutEffect(() => {
     function centerCurrent() {
       gsap.set(trackRef.current, { x: getCenterX(indexRef.current) })

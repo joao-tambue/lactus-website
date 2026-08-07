@@ -17,8 +17,6 @@ export function WorldCleaner() {
           </p>
         </div>
 
-        {/* Fixed-width cards mirror the Figma design 1:1; below `lg` the row
-            scrolls horizontally instead of shrinking/distorting the cards. */}
         <div className="-mx-6 mt-15 overflow-x-auto px-6 pb-2 sm:-mx-10 sm:px-10 lg:mx-0 lg:overflow-visible lg:px-0 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <div className="flex w-max gap-6 lg:w-full lg:justify-center">
             {worldCleanerCards.map((card) => (
