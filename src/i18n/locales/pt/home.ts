@@ -103,26 +103,63 @@ export const home = {
     recycleSymbolAlt: 'Símbolo de reciclagem',
   },
   testimonials: {
-    title: 'A Equipa por Trás da Lactus',
+    title: 'O Que Dizem Sobre Nós',
     starsAlt: 'Avaliação de 5 estrelas',
     items: {
-      catarinaMonteiro: {
+      martaFernandes: {
         quote:
-          'Unimos inovação, criatividade e muito empenho para criar soluções com impacto real na vida das pessoas e das comunidades.',
-        role: 'Gestora de Projetos & Founder',
-        avatarAlt: 'Retrato de Catarina Monteiro',
+          'O Saúde+ dá-nos informação atempada para antecipar surtos e agir antes que afetem as comunidades. É uma ferramenta transformadora para a saúde pública.',
+        role: 'Enfermeira de Saúde Pública',
+        avatarAlt: 'Retrato de Marta Fernandes',
       },
-      anabelmoFeijo: {
+      domingosMateus: {
         quote:
-          'A Lactus nasceu do sonho de transformar a realidade africana através da tecnologia. O primeiro lugar no NASA Space Apps Luanda 2025 provou que é possível.',
+          'Com o Lumi, a nossa comunidade passou a ter iluminação limpa e acessível, sem depender de combustíveis fósseis. É energia que muda vidas.',
+        role: 'Líder Comunitário',
+        avatarAlt: 'Retrato de Domingos Mateus',
+      },
+      paulaSebastiao: {
+        quote:
+          'Trabalhar com a Lactus é apostar em soluções bem pensadas, adaptadas à nossa realidade e com impacto real e mensurável.',
+        role: 'Coordenadora de Parcerias',
+        avatarAlt: 'Retrato de Paula Sebastião',
+      },
+    },
+  },
+  team: {
+    title: 'Conhece a<br/>Nossa Equipa',
+    supporting:
+      'A Lactus é formada por uma equipa jovem, multidisciplinar e comprometida com a inovação e o impacto social.',
+    prevAria: 'Anterior',
+    nextAria: 'Próximo',
+    members: {
+      anabelmoFeijo: {
         role: 'CEO & Fundador',
-        avatarAlt: 'Retrato de Anabelmo Feijó',
+        imageAlt: 'Retrato de Anabelmo Feijó',
       },
       israelPedro: {
-        quote:
-          'Acreditamos em soluções simples, acessíveis e escaláveis, pensadas para o contexto real das comunidades africanas.',
         role: 'CTO & Fundador',
-        avatarAlt: 'Retrato de Israel Pedro',
+        imageAlt: 'Retrato de Israel Pedro',
+      },
+      catarinaMonteiro: {
+        role: 'Gestora de Projetos & Founder',
+        imageAlt: 'Retrato de Catarina Monteiro',
+      },
+      joaoTambue: {
+        role: 'Desenvolvedor',
+        imageAlt: 'Retrato de João Tambue',
+      },
+      leriaBumba: {
+        role: 'Desenvolvedora',
+        imageAlt: 'Retrato de Leria Bumba',
+      },
+      luisaTimoteo: {
+        role: 'Desenvolvedora',
+        imageAlt: 'Retrato de Luísa Timóteo',
+      },
+      pauloSanguli: {
+        role: 'Desenvolvedor',
+        imageAlt: 'Retrato de Paulo Sanguli',
       },
     },
   },

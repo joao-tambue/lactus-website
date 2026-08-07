@@ -1,17 +1,20 @@
-import { forwardRef } from "react";
-import type { TeamMember } from "@/types/types";
+import { forwardRef } from 'react'
+import { useTranslation } from 'react-i18next'
+import type { TeamMember } from '@/types/types'
 
-interface DeveloperCardProps {
-  member: TeamMember;
+interface TeamMemberCardProps {
+  member: TeamMember
 }
 
 /**
- * Card do carrossel: fundo cinza (gradiente), nome do cargo alinhado
+ * Card do carrossel: fundo cinza (gradiente), nome e cargo alinhados
  * à esquerda/embaixo, e a imagem da pessoa (PNG sem fundo) ancorada
  * na parte inferior direita do card.
  */
-const DeveloperCard = forwardRef<HTMLDivElement, DeveloperCardProps>(
+const TeamMemberCard = forwardRef<HTMLDivElement, TeamMemberCardProps>(
   ({ member }, ref) => {
+    const { t } = useTranslation('home')
+
     return (
       <div
         ref={ref}
@@ -22,7 +25,7 @@ const DeveloperCard = forwardRef<HTMLDivElement, DeveloperCardProps>(
           aspect-[4/5] sm:aspect-[5/6] lg:aspect-[16/13]
         "
       >
-        {/* Nome do cargo */}
+        {/* Nome e cargo */}
         <div className="absolute inset-x-0 bottom-0 z-10 p-6 sm:p-7 lg:p-9">
           <h3
             className="
@@ -32,14 +35,23 @@ const DeveloperCard = forwardRef<HTMLDivElement, DeveloperCardProps>(
               sm:text-3xl lg:text-[2.1rem]
             "
           >
-            {member.role}
+            {member.name}
           </h3>
+          <p
+            className="
+              mt-1.5 max-w-[70%] text-sm font-medium text-white/80
+              [text-shadow:0_1px_8px_rgba(0,0,0,0.3)]
+              sm:text-base
+            "
+          >
+            {t(`team.members.${member.id}.role`)}
+          </p>
         </div>
 
         {/* Imagem da pessoa — PNG sem fundo */}
         <img
           src={member.imageSrc}
-          alt={member.imageAlt}
+          alt={t(`team.members.${member.id}.imageAlt`)}
           draggable={false}
           className="
             pointer-events-none absolute bottom-0 right-0
@@ -48,10 +60,10 @@ const DeveloperCard = forwardRef<HTMLDivElement, DeveloperCardProps>(
           "
         />
       </div>
-    );
-  }
-);
+    )
+  },
+)
 
-DeveloperCard.displayName = "DeveloperCard";
+TeamMemberCard.displayName = 'TeamMemberCard'
 
-export default DeveloperCard;
+export default TeamMemberCard

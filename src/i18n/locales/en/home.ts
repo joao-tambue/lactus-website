@@ -102,26 +102,63 @@ export const home = {
     recycleSymbolAlt: 'Recycling symbol',
   },
   testimonials: {
-    title: 'The Team Behind Lactus',
+    title: 'What People Say About Us',
     starsAlt: '5-star rating',
     items: {
-      catarinaMonteiro: {
+      martaFernandes: {
         quote:
-          'We combine innovation, creativity and hard work to create solutions with real impact on the lives of people and communities.',
-        role: 'Project Manager & Founder',
-        avatarAlt: 'Portrait of Catarina Monteiro',
+          'Saúde+ gives us timely information to anticipate outbreaks and act before they affect communities. It is a game-changing tool for public health.',
+        role: 'Public Health Nurse',
+        avatarAlt: 'Portrait of Marta Fernandes',
       },
-      anabelmoFeijo: {
+      domingosMateus: {
         quote:
-          'Lactus was born from the dream of transforming the African reality through technology. First place at NASA Space Apps Luanda 2025 proved it is possible.',
+          'With Lumi, our community now has clean, accessible lighting without relying on fossil fuels. It is energy that changes lives.',
+        role: 'Community Leader',
+        avatarAlt: 'Portrait of Domingos Mateus',
+      },
+      paulaSebastiao: {
+        quote:
+          'Working with Lactus means betting on well-thought-out solutions, adapted to our reality and with real, measurable impact.',
+        role: 'Partnership Coordinator',
+        avatarAlt: 'Portrait of Paula Sebastião',
+      },
+    },
+  },
+  team: {
+    title: 'Meet<br/>Our Team',
+    supporting:
+      'Lactus is made up of a young, multidisciplinary team committed to innovation and social impact.',
+    prevAria: 'Previous',
+    nextAria: 'Next',
+    members: {
+      anabelmoFeijo: {
         role: 'CEO & Founder',
-        avatarAlt: 'Portrait of Anabelmo Feijó',
+        imageAlt: 'Portrait of Anabelmo Feijó',
       },
       israelPedro: {
-        quote:
-          'We believe in simple, accessible and scalable solutions, designed for the real context of African communities.',
         role: 'CTO & Founder',
-        avatarAlt: 'Portrait of Israel Pedro',
+        imageAlt: 'Portrait of Israel Pedro',
+      },
+      catarinaMonteiro: {
+        role: 'Project Manager & Founder',
+        imageAlt: 'Portrait of Catarina Monteiro',
+      },
+      joaoTambue: {
+        role: 'Developer',
+        imageAlt: 'Portrait of João Tambue',
+      },
+      leriaBumba: {
+        role: 'Developer',
+        imageAlt: 'Portrait of Leria Bumba',
+      },
+      luisaTimoteo: {
+        role: 'Developer',
+        imageAlt: 'Portrait of Luísa Timóteo',
+      },
+      pauloSanguli: {
+        role: 'Developer',
+        imageAlt: 'Portrait of Paulo Sanguli',
       },
     },
   },

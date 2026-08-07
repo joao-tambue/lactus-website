@@ -6,7 +6,7 @@ import { Initiatives } from '@/components/sections/initiatives'
 import { WorldCleaner } from '@/components/sections/world-cleaner'
 import { EcoPackaging } from '@/components/sections/eco-packaging'
 import { Testimonials } from '@/components/sections/testimonials'
-import BuiltForDevelopers from '@/components/sections/built-for-developers/Builtfordevelopers'
+import Team from '@/components/sections/team/Team'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -22,7 +22,7 @@ function Home() {
       <WorldCleaner />
       <EcoPackaging />
       <Testimonials />
-      <BuiltForDevelopers />
+      <Team />
     </>
   )
 }
