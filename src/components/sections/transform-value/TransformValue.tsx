@@ -17,7 +17,6 @@ export function TransformValue() {
           </p>
         </div>
 
-        {/* Content grid */}
         <div className="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
           <div className="relative">
             <div className="absolute left-0 top-0 flex items-center gap-8">
@@ -70,7 +69,6 @@ export function TransformValue() {
               </div>
             </div>
 
-            {/* Row 2: stat card */}
             <div className="flex flex-1 flex-col justify-center rounded-3xl bg-neutral-100 px-7 py-6">
               <h3 className="text-2xl font-bold text-neutral-950">
                 {t('transformValue.statTitle')}

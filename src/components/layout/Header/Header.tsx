@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
   CloseIcon,
-  LogoMark,
   MenuIcon,
   SearchIcon,
 } from '@/components/icons'
@@ -23,10 +22,7 @@ export function Header() {
     <header className="relative z-50 w-full">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-6 sm:px-10">
         <a href="/" className="flex items-center gap-2.5 shrink-0">
-          <LogoMark className="size-8" />
-          <span className="text-lg font-semibold text-neutral-950">
-            EcoScrap
-          </span>
+          <img src="/lactus.png" alt="Lactus" className='w-30' />
         </a>
 
         {/* Desktop nav */}

@@ -7,9 +7,6 @@ export function Testimonials() {
   const { t } = useTranslation('home')
   const activeCardRef = useRef<HTMLDivElement>(null)
 
-  // Matches the Figma frame's default state: the row overflows the viewport
-  // symmetrically with the featured (dark) card centered — so bring it into
-  // view on mount instead of leaving the scroll pinned to the left edge.
   useEffect(() => {
     activeCardRef.current?.scrollIntoView({
       inline: 'center',

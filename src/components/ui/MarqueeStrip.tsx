@@ -15,7 +15,6 @@ export function MarqueeStrip() {
   return (
     <div className="w-full overflow-hidden bg-emerald-950 py-8">
       <div className="flex w-max animate-[marquee_28s_linear_infinite] hover:[animation-play-state:paused]">
-        {/* Content is duplicated so the loop is seamless */}
         {[...Array(2)].map((_, groupIndex) => (
           <ul
             key={groupIndex}

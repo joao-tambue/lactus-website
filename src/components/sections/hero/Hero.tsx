@@ -14,7 +14,6 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden px-6 pt-16 sm:px-10 lg:pt-20">
       <div className="relative mx-auto max-w-284.75">
-        {/* Decorative floating circle with star */}
         <span className="absolute left-[1%] top-[75%] hidden size-12 items-center justify-center rounded-full bg-lime-100 text-emerald-900 lg:flex">
           <StarIcon className="size-7.5" />
         </span>
@@ -28,7 +27,6 @@ export function Hero() {
           />
         ))}
 
-        {/* Headline */}
         <h1 className="text-balance text-center font-sans text-[42px] font-bold leading-[1.05] tracking-tight text-neutral-950 sm:text-6xl lg:text-[68px]">
           <Trans
             t={t}
@@ -41,12 +39,10 @@ export function Hero() {
           />
         </h1>
 
-        {/* Supporting copy */}
         <p className="mx-auto mt-6 max-w-200 text-balance text-center text-sm leading-relaxed text-neutral-500 sm:text-base">
           {t('hero.supporting')}
         </p>
 
-        {/* CTA */}
         <div className="relative mt-8 flex justify-center">
           <CTAButton />
           <img
@@ -57,7 +53,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Gallery strip */}
       <div className="mx-auto mt-15 max-w-307.5 flex items-center justify-center gap-4">
         {galleryItems.map((item, index) => {
           if (item.type === 'card') {

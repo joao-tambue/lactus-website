@@ -9,17 +9,17 @@ export type FloatingImage = {
 export const floatingImages: FloatingImage[] = [
   {
     id: 'planting',
-    src: 'https://picsum.photos/seed/ecoscrap-sapling/160/160',
+    src: '/hero/mom.jpeg',
     className: 'left-[10%] top-[95%] hidden lg:block',
   },
   {
     id: 'foliage',
-    src: 'https://picsum.photos/seed/ecoscrap-greenery/160/160',
+    src: '/hero/sobre-ft.jpeg',
     className: 'right-[1%] top-[65%] hidden lg:block',
   },
   {
     id: 'recycling',
-    src: 'https://picsum.photos/seed/ecoscrap-recycle/160/160',
+    src: '/hero/team-desafio.jpeg',
     className: 'right-[10%] top-[95%] hidden lg:block',
   },
 ]

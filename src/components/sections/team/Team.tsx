@@ -4,7 +4,6 @@ import { useCarousel } from '@/hooks/useCarousel'
 import { teamMembers } from '@/data/teamMembers'
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
 
-// Precisa bater com a classe "gap-6" (24px) usada no track abaixo
 const CARD_GAP = 24
 
 export default function Team() {
@@ -30,7 +29,6 @@ export default function Team() {
         </p>
       </div>
 
-      {/* Carrossel */}
       <div ref={containerRef} className="relative overflow-hidden py-12">
         <div ref={trackRef} className="flex gap-6" style={{ willChange: 'transform' }}>
           {teamMembers.map((member, cardIndex) => {
@@ -52,7 +50,6 @@ export default function Team() {
         </div>
       </div>
 
-      {/* Navegação */}
       <div className="mt-8 flex justify-end gap-3">
         <button
           type="button"

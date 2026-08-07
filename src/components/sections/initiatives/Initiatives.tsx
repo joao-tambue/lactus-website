@@ -14,7 +14,6 @@ export function Initiatives() {
   useEffect(() => {
     const prevIndex = prevIndexRef.current
 
-    // Fade out the previously active image
     if (
       prevIndex !== null &&
       prevIndex !== activeIndex &&
@@ -28,7 +27,6 @@ export function Initiatives() {
       })
     }
 
-    // Animate the newly active image in
     if (activeIndex !== null && imageRefs.current[activeIndex]) {
       gsap.fromTo(
         imageRefs.current[activeIndex],
@@ -104,7 +102,6 @@ export function Initiatives() {
                     <ArrowUpRightIcon className="size-4" />
                   </span>
 
-                  {/* Floating preview image, animated in with GSAP */}
                   <div
                     ref={(el) => {
                       imageRefs.current[index] = el
