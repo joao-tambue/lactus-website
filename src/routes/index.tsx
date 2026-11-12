@@ -10,7 +10,6 @@ import { WorldCleaner } from '@/components/sections/world-cleaner'
 import { Moments } from '@/components/sections/moments'
 import { EcoPackaging } from '@/components/sections/eco-packaging'
 import { Recognition } from '@/components/sections/recognition'
-import { Testimonials } from '@/components/sections/testimonials'
 import Team from '@/components/sections/team/Team'
 import { Faq } from '@/components/sections/faq'
 import { Contact } from '@/components/sections/contact'
@@ -33,7 +32,6 @@ function Home() {
       <Moments />
       <EcoPackaging />
       <Recognition />
-      <Testimonials />
       <Team />
       <Faq />
       <Contact />

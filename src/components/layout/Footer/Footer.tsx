@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from '@tanstack/react-router'
 import {
   FacebookLogo,
   InstagramLogo,
@@ -7,16 +8,16 @@ import {
 import { LogoMark } from '@/components/icons'
 
 const companyLinks = [
-  { key: 'about', href: '#about' },
-  { key: 'team', href: '#team' },
-  { key: 'contact', href: '#contact' },
+  { key: 'about', hash: 'about' },
+  { key: 'team', hash: 'team' },
+  { key: 'contact', hash: 'contact' },
 ] as const
 
 const solutionsLinks = [
-  { key: 'energy', href: '#lumi' },
-  { key: 'health', href: '#solutions' },
-  { key: 'environment', href: '#solutions' },
-  { key: 'iot', href: '#solutions' },
+  { key: 'energy', hash: 'lumi' },
+  { key: 'health', hash: 'solutions' },
+  { key: 'environment', hash: 'solutions' },
+  { key: 'iot', hash: 'solutions' },
 ] as const
 
 const socialLinks = [
@@ -64,14 +65,15 @@ export function Footer() {
               {t('footer.companyTitle')}
             </h3>
             <ul className="mt-5 flex flex-col gap-3">
-              {companyLinks.map(({ key, href }) => (
+              {companyLinks.map(({ key, hash }) => (
                 <li key={key}>
-                  <a
-                    href={href}
+                  <Link
+                    to="/"
+                    hash={hash}
                     className="text-sm text-white/70 transition-colors hover:text-lime-300"
                   >
                     {t(`footer.companyLinks.${key}`)}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -83,14 +85,15 @@ export function Footer() {
               {t('footer.solutionsTitle')}
             </h3>
             <ul className="mt-5 flex flex-col gap-3">
-              {solutionsLinks.map(({ key, href }) => (
+              {solutionsLinks.map(({ key, hash }) => (
                 <li key={key}>
-                  <a
-                    href={href}
+                  <Link
+                    to="/"
+                    hash={hash}
                     className="text-sm text-white/70 transition-colors hover:text-lime-300"
                   >
                     {t(`footer.solutionsLinks.${key}`)}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

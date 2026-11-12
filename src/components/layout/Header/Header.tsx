@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from '@tanstack/react-router'
 import {
   CloseIcon,
   MenuIcon,
@@ -8,11 +9,11 @@ import {
 import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher'
 
 const navLinks = [
-  { key: 'about', href: '#about' },
-  { key: 'lumi', href: '#lumi' },
-  { key: 'solutions', href: '#solutions' },
-  { key: 'successStories', href: '#success-stories' },
-  { key: 'resources', href: '#faq' },
+  { key: 'about', hash: 'about' },
+  { key: 'lumi', hash: 'lumi' },
+  { key: 'solutions', hash: 'solutions' },
+  { key: 'successStories', hash: 'success-stories' },
+  { key: 'resources', hash: 'faq' },
 ] as const
 
 export function Header() {
@@ -22,32 +23,34 @@ export function Header() {
   return (
     <header className="relative z-50 w-full">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-6 sm:px-10">
-        <a href="/" className="flex items-center gap-2.5 shrink-0">
+        <Link to="/" className="flex items-center gap-2.5 shrink-0">
           <img src="/lactus.png" alt="Lactus" className='w-30' />
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.key}
-              href={link.href}
+              to="/"
+              hash={link.hash}
               className="text-sm font-medium text-neutral-950 transition-colors hover:text-neutral-600"
             >
               {t(`header.nav.${link.key}`)}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="hidden items-center gap-6 lg:flex">
           <LanguageSwitcher />
 
-          <a
-            href="#contact"
+          <Link
+            to="/"
+            hash="contact"
             className="rounded-full bg-neutral-950 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-neutral-800"
           >
             {t('header.signUp')}
-          </a>
+          </Link>
 
           <button
             type="button"
@@ -77,26 +80,28 @@ export function Header() {
         <div className="border-t border-neutral-100 px-6 pb-6 pt-2 lg:hidden">
           <nav className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.key}
-                href={link.href}
+                to="/"
+                hash={link.hash}
                 className="text-sm font-medium text-neutral-950"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t(`header.nav.${link.key}`)}
-              </a>
+              </Link>
             ))}
           </nav>
 
           <div className="mt-6 flex items-center justify-between gap-4">
             <LanguageSwitcher />
 
-            <a
-              href="#contact"
+            <Link
+            to="/"
+            hash="contact"
               className="rounded-full bg-neutral-950 px-6 py-2.5 text-sm font-semibold text-white"
             >
               {t('header.signUp')}
-            </a>
+            </Link>
           </div>
         </div>
       )}

@@ -1,5 +1,6 @@
-import type { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
+import type { ButtonHTMLAttributes, ComponentPropsWithRef } from 'react'
 import { useTranslation } from 'react-i18next'
+import { createLink, type LinkComponentProps } from '@tanstack/react-router'
 
 /**
  * primary   → fundos claros: pílula branca + círculo verde-floresta.
@@ -14,10 +15,7 @@ type VariantProps = {
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & VariantProps
 
-type LinkProps = AnchorHTMLAttributes<HTMLAnchorElement> &
-  VariantProps & {
-    href: string
-  }
+type LinkProps = ComponentPropsWithRef<'a'> & VariantProps
 
 const baseClasses = [
   'group relative inline-flex items-center rounded-full border p-0',
@@ -120,4 +118,11 @@ export function CTALink({
       <CTAContent label={label ?? t('cta.getStarted')} variant={variant} />
     </a>
   )
+}
+
+const RouterCTALink = createLink(CTALink)
+
+/** CTALink ligado ao router: navega entre páginas sem recarregar (`to="/sobre"`). */
+export function CTARouterLink(props: LinkComponentProps<typeof CTALink>) {
+  return <RouterCTALink preload="intent" {...props} />
 }

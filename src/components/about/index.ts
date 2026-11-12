@@ -1,0 +1,7 @@
+export { AboutHero } from './AboutHero'
+export { AboutStory } from './AboutStory'
+export { AboutName } from './AboutName'
+export { AboutTimeline } from './AboutTimeline'
+export { AboutPurpose } from './AboutPurpose'
+export { AboutWork } from './AboutWork'
+export { AboutFounders } from './AboutFounders'

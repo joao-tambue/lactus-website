@@ -9,21 +9,12 @@ export type Initiative = {
   image: string
 }
 
+// Fotos do Unsplash (Unsplash License: uso gratuito, incluindo comercial).
+// IDs de origem: energy 1509391366360, health 1576091160399,
+// environment 1590682680695, iot 1631378297854.
 export const initiatives: Initiative[] = [
-  {
-    id: 'sustainableEnergy',
-    image: 'https://picsum.photos/seed/lactus-energy/420/340',
-  },
-  {
-    id: 'digitalHealth',
-    image: 'https://picsum.photos/seed/lactus-health/420/340',
-  },
-  {
-    id: 'environmentalTech',
-    image: 'https://picsum.photos/seed/lactus-environment/420/340',
-  },
-  {
-    id: 'smartSystems',
-    image: 'https://picsum.photos/seed/lactus-iot/420/340',
-  },
+  { id: 'sustainableEnergy', image: '/initiatives/energy.jpg' },
+  { id: 'digitalHealth', image: '/initiatives/health.jpg' },
+  { id: 'environmentalTech', image: '/initiatives/environment.jpg' },
+  { id: 'smartSystems', image: '/initiatives/iot.jpg' },
 ]

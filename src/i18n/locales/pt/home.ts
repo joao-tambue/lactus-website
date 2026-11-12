@@ -25,16 +25,24 @@ export const home = {
     title: 'Como Surgiu a Lactus',
     supporting:
       'A Lactus nasceu de um momento de desafio, criatividade e superação.',
-    exploreTitle: 'Saiba Mais<br/>Sobre a Lactus',
-    exploreAria: 'Saiba mais sobre a Lactus',
-    howTitle: 'O Que Fazemos',
-    howText:
-      'Desenvolvemos soluções tecnológicas inovadoras nas áreas de energia sustentável, saúde digital, tecnologias ambientais e sistemas inteligentes.',
-    statTitle: 'A Lactus na Atualidade',
-    statText:
-      'A nossa jornada começou durante o NASA Space Apps Challenge Luanda 2025, um dos maiores hackathons do mundo. Inicialmente, éramos apenas uma equipa formada com o objetivo de competir, aprender e testar as nossas capacidades. No entanto, ao longo da competição, conseguimos destacar-nos não apenas pela nossa solução, mas também pela nossa visão e espírito de equipa. O resultado foi marcante: conquistámos o primeiro lugar e, ao mesmo tempo, o reconhecimento e o carinho do público. Foi nesse momento que percebemos que aquilo que tínhamos criado ia além de um projeto de hackathon - tinha potencial real de impacto. Muitos perguntaram sobre o nome “Lactus”, e a nossa resposta sempre foi simples e simbólica: o nome inspira-se em “Galactus”, uma entidade poderosa, representando força, transformação e impacto em larga escala. Adaptámos esse conceito à nossa identidade, criando um nome único que reflete a nossa ambição de transformar realidades através da tecnologia. Motivados pelo reconhecimento e pelo potencial das nossas ideias, decidimos dar o próximo passo: transformar a equipa em algo maior. Assim, em novembro de 2025, a Lactus nasceu oficialmente como startup, com o compromisso de desenvolver soluções inovadoras que gerem impacto real na sociedade.',
-    aboutImageAlt: 'Estufa com plantas rodeada de vegetação',
-    containersImageAlt: 'Contentores de reciclagem numa rua',
+    lead: 'Tudo começou no NASA Space Apps Challenge Luanda 2025. Uma equipa formada para competir e aprender ficou em primeiro lugar e percebeu que a ideia tinha potencial real de impacto.',
+    location: 'Luanda, Angola',
+    milestones: {
+      nasa: {
+        date: '2025',
+        text: '1.º lugar no NASA Space Apps Challenge Luanda',
+      },
+      founded: {
+        date: 'Novembro 2025',
+        text: 'A Lactus nasce oficialmente como startup',
+      },
+      tigra: {
+        date: '2026',
+        text: 'Prémio Tigra Nova Garra pelo impacto social',
+      },
+    },
+    cta: 'Ver mais sobre a Lactus',
+    aboutImageAlt: 'Equipa Lactus a trabalhar no protótipo do Lumi',
   },
   initiatives: {
     title: 'As Nossas Áreas de Atuação',
@@ -43,25 +51,25 @@ export const home = {
         title: 'Energia Sustentável',
         description:
           'Soluções inovadoras de energia limpa e renovável, como o Lumi, que gera eletricidade a partir da natureza.',
-        imageAlt: 'Painéis solares ao pôr do sol',
+        imageAlt: 'Painéis solares num campo verde',
       },
       digitalHealth: {
         title: 'Saúde Digital',
         description:
           'Plataformas inteligentes como o Saúde+, que preveem e previnem surtos de doenças com base em dados.',
-        imageAlt: 'Profissional de saúde a analisar dados',
+        imageAlt: 'Profissional de saúde a usar o telemóvel',
       },
       environmentalTech: {
         title: 'Tecnologias Ambientais',
         description:
           'Tecnologias que promovem a preservação do meio ambiente e o uso responsável dos recursos naturais.',
-        imageAlt: 'Paisagem natural preservada',
+        imageAlt: 'Mãos a plantar uma muda na terra',
       },
       smartSystems: {
         title: 'Sistemas Inteligentes & IoT',
         description:
           'Sistemas conectados que modernizam processos, melhoram a eficiência e elevam a qualidade de vida.',
-        imageAlt: 'Cidade moderna com dispositivos conectados',
+        imageAlt: 'Placa Arduino ligada a uma breadboard com fios',
       },
     },
   },
@@ -101,30 +109,6 @@ export const home = {
     mountainsImageAlt: 'Estrada sinuosa entre montanhas cobertas de nevoeiro',
     pebblesImageAlt: 'Seixos e folhas molhadas, texturas naturais',
     recycleSymbolAlt: 'Símbolo de reciclagem',
-  },
-  testimonials: {
-    title: 'O Que Dizem Sobre Nós',
-    starsAlt: 'Avaliação de 5 estrelas',
-    items: {
-      martaFernandes: {
-        quote:
-          'O Saúde+ dá-nos informação atempada para antecipar surtos e agir antes que afetem as comunidades. É uma ferramenta transformadora para a saúde pública.',
-        role: 'Enfermeira de Saúde Pública',
-        avatarAlt: 'Retrato de Marta Fernandes',
-      },
-      domingosMateus: {
-        quote:
-          'Com o Lumi, a nossa comunidade passou a ter iluminação limpa e acessível, sem depender de combustíveis fósseis. É energia que muda vidas.',
-        role: 'Líder Comunitário',
-        avatarAlt: 'Retrato de Domingos Mateus',
-      },
-      paulaSebastiao: {
-        quote:
-          'Trabalhar com a Lactus é apostar em soluções bem pensadas, adaptadas à nossa realidade e com impacto real e mensurável.',
-        role: 'Coordenadora de Parcerias',
-        avatarAlt: 'Retrato de Paula Sebastião',
-      },
-    },
   },
   team: {
     title: 'Conhece a<br/>Nossa Equipa',

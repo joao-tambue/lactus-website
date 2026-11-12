@@ -5,7 +5,8 @@ import { routeTree } from '@/routeTree.gen'
 import '@/index.css'
 import '@/i18n'
 
-const router = createRouter({ routeTree })
+// scrollRestoration: páginas novas abrem no topo; "voltar" repõe a posição.
+const router = createRouter({ routeTree, scrollRestoration: true })
 
 declare module '@tanstack/react-router' {
   interface Register {

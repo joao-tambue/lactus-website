@@ -25,16 +25,24 @@ export const home = {
     title: 'How Lactus Came to Be',
     supporting:
       'Lactus was born from a moment of challenge, creativity and determination.',
-    exploreTitle: 'Learn More<br/>About Lactus',
-    exploreAria: 'Learn more about Lactus',
-    howTitle: 'What We Do',
-    howText:
-      'We develop innovative technological solutions in the areas of sustainable energy, digital health, environmental technologies and smart systems.',
-    statTitle: 'Lactus Today',
-    statText:
-      'Our journey began during the NASA Space Apps Challenge Luanda 2025, one of the world\'s largest hackathons. Initially, we were just a team formed with the goal of competing, learning and testing our abilities. However, throughout the competition, we stood out not only for our solution, but also for our vision and team spirit. The result was remarkable: we took first place and, at the same time, the recognition and affection of the public. It was then that we realised that what we had created went beyond a hackathon project - it had real potential for impact. Many asked about the name "Lactus", and our answer was always simple and symbolic: the name is inspired by "Galactus", a powerful entity, representing strength, transformation and large-scale impact. We adapted this concept to our identity, creating a unique name that reflects our ambition to transform realities through technology. Motivated by the recognition and the potential of our ideas, we decided to take the next step: turn the team into something bigger. Thus, in November 2025, Lactus was officially born as a startup, committed to developing innovative solutions that generate real impact on society.',
-    aboutImageAlt: 'Greenhouse with plants surrounded by vegetation',
-    containersImageAlt: 'Recycling containers on a street',
+    lead: 'It all started at the NASA Space Apps Challenge Luanda 2025. A team formed to compete and learn took first place and realised the idea had real potential for impact.',
+    location: 'Luanda, Angola',
+    milestones: {
+      nasa: {
+        date: '2025',
+        text: '1st place at the NASA Space Apps Challenge Luanda',
+      },
+      founded: {
+        date: 'November 2025',
+        text: 'Lactus is officially born as a startup',
+      },
+      tigra: {
+        date: '2026',
+        text: 'Tigra Nova Garra Award for social impact',
+      },
+    },
+    cta: 'See more about Lactus',
+    aboutImageAlt: 'Lactus team working on the Lumi prototype',
   },
   initiatives: {
     title: 'Our Focus Areas',
@@ -43,25 +51,25 @@ export const home = {
         title: 'Sustainable Energy',
         description:
           'Innovative clean and renewable energy solutions, such as Lumi, which generates electricity from nature.',
-        imageAlt: 'Solar panels at sunset',
+        imageAlt: 'Solar panels in a green field',
       },
       digitalHealth: {
         title: 'Digital Health',
         description:
           'Smart platforms such as Saúde+, which predict and prevent disease outbreaks based on data.',
-        imageAlt: 'Health professional analyzing data',
+        imageAlt: 'Health professional using a phone',
       },
       environmentalTech: {
         title: 'Environmental Technologies',
         description:
           'Technologies that promote the preservation of the environment and the responsible use of natural resources.',
-        imageAlt: 'Preserved natural landscape',
+        imageAlt: 'Hands planting a seedling in the soil',
       },
       smartSystems: {
         title: 'Smart Systems & IoT',
         description:
           'Connected systems that modernize processes, improve efficiency and raise quality of life.',
-        imageAlt: 'Modern city with connected devices',
+        imageAlt: 'Arduino board connected to a breadboard with wires',
       },
     },
   },
@@ -100,30 +108,6 @@ export const home = {
     mountainsImageAlt: 'Winding road between fog-covered mountains',
     pebblesImageAlt: 'Wet pebbles and leaves, natural textures',
     recycleSymbolAlt: 'Recycling symbol',
-  },
-  testimonials: {
-    title: 'What People Say About Us',
-    starsAlt: '5-star rating',
-    items: {
-      martaFernandes: {
-        quote:
-          'Saúde+ gives us timely information to anticipate outbreaks and act before they affect communities. It is a game-changing tool for public health.',
-        role: 'Public Health Nurse',
-        avatarAlt: 'Portrait of Marta Fernandes',
-      },
-      domingosMateus: {
-        quote:
-          'With Lumi, our community now has clean, accessible lighting without relying on fossil fuels. It is energy that changes lives.',
-        role: 'Community Leader',
-        avatarAlt: 'Portrait of Domingos Mateus',
-      },
-      paulaSebastiao: {
-        quote:
-          'Working with Lactus means betting on well-thought-out solutions, adapted to our reality and with real, measurable impact.',
-        role: 'Partnership Coordinator',
-        avatarAlt: 'Portrait of Paula Sebastião',
-      },
-    },
   },
   team: {
     title: 'Meet<br/>Our Team',
