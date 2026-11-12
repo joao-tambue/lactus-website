@@ -1,24 +1,22 @@
 export const home = {
   hero: {
-    headline:
-      'Tecnologia <highlight>Sustentável</highlight> para um Futuro Melhor',
-    supporting:
-      'A Lactus é uma startup angolana de base tecnológica que desenvolve soluções inovadoras orientadas para a sustentabilidade, com o propósito de melhorar a qualidade de vida das pessoas e contribuir para a preservação do meio ambiente.',
-    nasaCard: 'Vencedor Nasa Space<br/>Apps {{year}}',
-    ptngBadge: 'Vencedores Tigra Nova<br/>Garra 2026',
-    curveAlt: 'Linha curva',
-    longArrowAlt: 'Seta longa',
-    badgeImageAlt: 'Dia Internacional do Ambiente',
-    badgeLogoAlt: 'Logo do Dia Internacional do Ambiente',
-    floatingImages: {
-      planting: 'Voluntário a plantar uma árvore jovem',
-      foliage: 'Pessoa a colher folhagem verde',
-      recycling: 'Voluntários a recolher resíduos recicláveis',
+    location: 'Startup angolana · Luanda',
+    awards: {
+      nasa: '1.º lugar · NASA Space Apps Luanda 2025',
+      tigra: 'Prémio Tigra Nova Garra 2026',
     },
-    gallery: {
-      bottles: 'Garrafas de plástico recolhidas na relva',
-      family: 'Família a plantar uma árvore juntos',
-      volunteers: 'Grupo de voluntários a limpar um parque',
+    headline: 'Tecnologia com <highlight>raízes</highlight> em Angola',
+    supporting:
+      'Transformamos desafios reais em soluções sustentáveis, da energia que nasce do solo à saúde guiada por dados.',
+    primaryCta: 'Seja nosso parceiro',
+    secondaryCta: 'Conhecer o Lumi',
+    sproutLabel: 'Lumi · bioenergia',
+    rootsAria: 'Das raízes da Lactus nascem quatro áreas de atuação',
+    areas: {
+      energy: 'Energia sustentável',
+      health: 'Saúde digital',
+      environment: 'Tecnologias ambientais',
+      iot: 'Sistemas inteligentes & IoT',
     },
   },
   transformValue: {

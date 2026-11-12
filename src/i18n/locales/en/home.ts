@@ -1,24 +1,22 @@
 export const home = {
   hero: {
-    headline:
-      'Sustainable <highlight>Technology</highlight> for a Better Future',
-    supporting:
-      "Lactus is an Angolan tech startup that develops innovative sustainability-driven solutions, with the purpose of improving people's quality of life and contributing to the preservation of the environment.",
-    nasaCard: 'Nasa Space<br/>Apps Winner {{year}}',
-    ptngBadge: 'Tigra Nova Garra<br/>Winners 2026',
-    curveAlt: 'Curved line',
-    longArrowAlt: 'Long arrow',
-    badgeImageAlt: 'International Environment Day',
-    badgeLogoAlt: 'International Environment Day logo',
-    floatingImages: {
-      planting: 'Volunteer planting a young tree',
-      foliage: 'Person harvesting green foliage',
-      recycling: 'Volunteers collecting recyclable waste',
+    location: 'Angolan startup · Luanda',
+    awards: {
+      nasa: '1st place · NASA Space Apps Luanda 2025',
+      tigra: 'Tigra Nova Garra Award 2026',
     },
-    gallery: {
-      bottles: 'Plastic bottles collected on the grass',
-      family: 'Family planting a tree together',
-      volunteers: 'Group of volunteers cleaning up a park',
+    headline: 'Technology <highlight>rooted</highlight> in Angola',
+    supporting:
+      'We turn real challenges into sustainable solutions, from energy that grows out of the soil to data-driven health.',
+    primaryCta: 'Partner with us',
+    secondaryCta: 'Meet Lumi',
+    sproutLabel: 'Lumi · bioenergy',
+    rootsAria: 'Four areas of work grow from Lactus’ roots',
+    areas: {
+      energy: 'Sustainable energy',
+      health: 'Digital health',
+      environment: 'Environmental tech',
+      iot: 'Smart systems & IoT',
     },
   },
   transformValue: {

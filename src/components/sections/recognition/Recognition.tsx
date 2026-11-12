@@ -1,5 +1,6 @@
 import { Trans, useTranslation } from 'react-i18next'
 import { StarIcon } from '@/components/icons'
+import { StaggerGroup, StaggerItem } from '@/components/motion/Stagger'
 
 export function Recognition() {
   const { t } = useTranslation('home')
@@ -27,9 +28,9 @@ export function Recognition() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <StaggerGroup className="mt-14 grid gap-6 md:grid-cols-3">
           {/* NASA Space Apps */}
-          <article className="flex min-h-100 flex-col justify-between gap-8 rounded-4xl bg-forest-950 p-7 text-white">
+          <StaggerItem as="article" className="flex min-h-100 flex-col justify-between gap-8 rounded-4xl bg-forest-950 p-7 text-white">
             <div className="flex items-center justify-between gap-4">
               <span className="flex size-12 items-center justify-center rounded-full bg-leaf-400 text-forest-950">
                 <StarIcon className="size-6" />
@@ -52,10 +53,10 @@ export function Recognition() {
               className="h-32 w-full rounded-2xl object-cover"
               loading="lazy"
             />
-          </article>
+          </StaggerItem>
 
           {/* Nomeação global */}
-          <article className="relative flex min-h-100 flex-col justify-between gap-8 overflow-hidden rounded-4xl bg-leaf-200 p-7 text-forest-950">
+          <StaggerItem as="article" className="relative flex min-h-100 flex-col justify-between gap-8 overflow-hidden rounded-4xl bg-leaf-200 p-7 text-forest-950">
             <div
               className="pointer-events-none absolute -bottom-24 -right-24 size-80"
               aria-hidden="true"
@@ -77,10 +78,10 @@ export function Recognition() {
                 {t('recognition.awards.global.label')}
               </p>
             </div>
-          </article>
+          </StaggerItem>
 
           {/* Tigra Nova Garra */}
-          <article className="flex min-h-100 flex-col justify-between gap-8 rounded-4xl bg-neutral-100 p-7 text-neutral-950">
+          <StaggerItem as="article" className="flex min-h-100 flex-col justify-between gap-8 rounded-4xl bg-neutral-100 p-7 text-neutral-950">
             <div className="flex items-center justify-between gap-4">
               <span className="flex size-12 items-center justify-center rounded-full bg-forest-950 text-leaf-200">
                 <StarIcon className="size-6" />
@@ -103,8 +104,8 @@ export function Recognition() {
               className="h-32 w-full rounded-2xl object-cover"
               loading="lazy"
             />
-          </article>
-        </div>
+          </StaggerItem>
+        </StaggerGroup>
       </div>
     </section>
   )

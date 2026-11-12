@@ -20,7 +20,7 @@ export function TransformValue() {
         </div>
 
         <div className="mt-12 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="relative aspect-4/3 w-full overflow-hidden rounded-4xl lg:aspect-5/6">
+          <div data-reveal-image className="relative aspect-4/3 w-full overflow-hidden rounded-4xl lg:aspect-5/6">
             <img
               src="/hero/sobre-ft.jpeg"
               alt={t('transformValue.aboutImageAlt')}
@@ -38,7 +38,12 @@ export function TransformValue() {
               {t('transformValue.lead')}
             </p>
 
-            <ol className="mt-10 border-l border-line-200">
+            <ol className="relative mt-10 border-l border-line-200">
+              <span
+                data-draw="y"
+                className="absolute -left-px top-0 h-full w-0.5 origin-top bg-leaf-400"
+                aria-hidden="true"
+              />
               {milestones.map((id) => (
                 <li key={id} className="relative pb-7 pl-8 last:pb-0">
                   <span

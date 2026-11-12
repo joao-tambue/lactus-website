@@ -46,7 +46,7 @@ export function Initiatives() {
   }, [activeIndex])
 
   return (
-    <section className="bg-neutral-100 py-20 lg:py-28">
+    <section id="areas" className="scroll-mt-6 bg-neutral-100 py-20 lg:py-28">
       <div className="mx-auto max-w-5xl px-6 sm:px-10">
         <h2 className="text-center text-[48px] font-bold tracking-tight text-neutral-950 sm:text-5xl">
           {t('initiatives.title')}

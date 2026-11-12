@@ -20,6 +20,11 @@ export function AboutTimeline() {
             className="absolute left-0 right-0 top-2 hidden h-px bg-line-200 lg:block"
             aria-hidden="true"
           />
+          <span
+            data-draw="x"
+            className="absolute left-0 right-0 top-[7px] hidden h-0.5 origin-left bg-leaf-400 lg:block"
+            aria-hidden="true"
+          />
 
           {items.map((id, index) => {
             const isLast = index === items.length - 1

@@ -15,7 +15,7 @@ export function AboutStory() {
             <Trans t={t} i18nKey="story.title" components={{ highlight: highlightPill }} />
           </SectionTitle>
 
-          <div className="mt-10 hidden aspect-4/5 max-w-90 overflow-hidden rounded-4xl lg:block">
+          <div data-reveal-image className="mt-10 hidden aspect-4/5 max-w-90 overflow-hidden rounded-4xl lg:block">
             <img
               src="/hero/team-desafio.jpeg"
               alt={t('story.imageAlt')}

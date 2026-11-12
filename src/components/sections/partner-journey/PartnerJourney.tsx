@@ -3,6 +3,7 @@ import { ArrowRight } from '@phosphor-icons/react'
 import { LogoMark } from '@/components/icons'
 import { CTALink } from '@/components/ui/Button'
 import { partnerSteps } from '@/data/partnerSteps'
+import { StaggerGroup, StaggerItem } from '@/components/motion/Stagger'
 
 export function PartnerJourney() {
   const { t } = useTranslation('home')
@@ -22,7 +23,7 @@ export function PartnerJourney() {
             className="absolute -bottom-4 -left-4 hidden size-12 rounded-full bg-forest-800 sm:block"
             aria-hidden="true"
           />
-          <div className="relative aspect-4/5 overflow-hidden rounded-4xl">
+          <div data-reveal-image className="relative aspect-4/5 overflow-hidden rounded-4xl">
             <img
               src="/hero/team-desafio.jpeg"
               alt={t('partnerJourney.imageAlt')}
@@ -53,9 +54,9 @@ export function PartnerJourney() {
             {t('partnerJourney.lead')}
           </p>
 
-          <ol className="mt-10 grid gap-4 sm:grid-cols-3">
+          <StaggerGroup as="ol" className="mt-10 grid gap-4 sm:grid-cols-3">
             {partnerSteps.map((id, index) => (
-              <li key={id} className="relative rounded-3xl bg-white p-6">
+              <StaggerItem as="li" key={id} className="relative rounded-3xl bg-white p-6">
                 <span className="flex size-11 items-center justify-center rounded-full bg-forest-950 text-sm font-semibold text-leaf-200">
                   {String(index + 1).padStart(2, '0')}
                 </span>
@@ -74,9 +75,9 @@ export function PartnerJourney() {
                     <ArrowRight size={14} weight="bold" />
                   </span>
                 )}
-              </li>
+              </StaggerItem>
             ))}
-          </ol>
+          </StaggerGroup>
 
           <CTALink
             href="#contact"

@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { useScrollEffects } from '@/hooks/useScrollEffects'
 import { Header } from '@/components/layout/Header'
 import {
   AboutFounders,
@@ -16,6 +17,8 @@ export const Route = createFileRoute('/sobre')({
 })
 
 function AboutPage() {
+  useScrollEffects('sobre')
+
   return (
     <>
       <Header />

@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { useScrollEffects } from '@/hooks/useScrollEffects'
 import { Hero } from '@/components/sections/hero'
 import { Header } from '@/components/layout/Header'
 import { TransformValue } from '@/components/sections/transform-value'
@@ -19,6 +20,8 @@ export const Route = createFileRoute('/')({
 })
 
 function Home() {
+  useScrollEffects('home')
+
   return (
     <>
       <Header />

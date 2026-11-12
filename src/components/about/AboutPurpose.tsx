@@ -2,6 +2,7 @@ import { Trans, useTranslation } from 'react-i18next'
 import { Compass, Eye, Heart } from '@phosphor-icons/react'
 import { highlightPill } from './highlights'
 import { SectionTitle } from './shared'
+import { StaggerGroup, StaggerItem } from '@/components/motion/Stagger'
 
 const values = ['innovation', 'sustainability', 'socialImpact', 'localContext'] as const
 
@@ -15,8 +16,8 @@ export function AboutPurpose() {
           <Trans t={t} i18nKey="purpose.title" components={{ highlight: highlightPill }} />
         </SectionTitle>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          <article className="flex min-h-80 flex-col justify-between gap-10 rounded-4xl bg-leaf-200 p-8">
+        <StaggerGroup className="mt-14 grid gap-6 lg:grid-cols-3">
+          <StaggerItem as="article" className="flex min-h-80 flex-col justify-between gap-10 rounded-4xl bg-leaf-200 p-8">
             <span className="flex size-12 items-center justify-center rounded-full bg-forest-950 text-leaf-200">
               <Compass size={22} aria-hidden="true" />
             </span>
@@ -28,9 +29,9 @@ export function AboutPurpose() {
                 {t('purpose.mission.text')}
               </p>
             </div>
-          </article>
+          </StaggerItem>
 
-          <article className="flex min-h-80 flex-col justify-between gap-10 rounded-4xl bg-forest-950 p-8 text-white">
+          <StaggerItem as="article" className="flex min-h-80 flex-col justify-between gap-10 rounded-4xl bg-forest-950 p-8 text-white">
             <span className="flex size-12 items-center justify-center rounded-full bg-leaf-400 text-forest-950">
               <Eye size={22} aria-hidden="true" />
             </span>
@@ -40,9 +41,9 @@ export function AboutPurpose() {
                 {t('purpose.vision.text')}
               </p>
             </div>
-          </article>
+          </StaggerItem>
 
-          <article className="flex min-h-80 flex-col justify-between gap-10 rounded-4xl bg-white p-8">
+          <StaggerItem as="article" className="flex min-h-80 flex-col justify-between gap-10 rounded-4xl bg-white p-8">
             <span className="flex size-12 items-center justify-center rounded-full bg-forest-950 text-white">
               <Heart size={22} aria-hidden="true" />
             </span>
@@ -61,8 +62,8 @@ export function AboutPurpose() {
                 ))}
               </ul>
             </div>
-          </article>
-        </div>
+          </StaggerItem>
+        </StaggerGroup>
       </div>
     </section>
   )

@@ -29,6 +29,7 @@ export function Moments() {
             {moments.map((moment) => (
               <figure
                 key={moment.id}
+                data-parallax={moment.parallax}
                 className={`group relative h-96 w-72 shrink-0 snap-center overflow-hidden rounded-4xl sm:w-80 lg:w-auto ${moment.heightClass}`}
               >
                 <img

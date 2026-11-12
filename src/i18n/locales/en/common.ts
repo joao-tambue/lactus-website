@@ -23,13 +23,6 @@ export const common = {
     pt: 'Português',
   },
   cta: { getStarted: 'Contact Us' },
-  marquee: {
-    ecoFriendly: 'Innovation',
-    conserve: 'Sustainability',
-    save: 'Social Impact',
-    envFriendly: 'Technology for All',
-    green: 'Greener Future',
-  },
   readMore: 'Read More',
   notFound: {
     title: 'Page not found',

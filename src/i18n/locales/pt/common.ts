@@ -23,13 +23,6 @@ export const common = {
     pt: 'Português',
   },
   cta: { getStarted: 'Contatar' },
-  marquee: {
-    ecoFriendly: 'Inovação',
-    conserve: 'Sustentabilidade',
-    save: 'Impacto Social',
-    envFriendly: 'Tecnologia para Todos',
-    green: 'Futuro Mais Verde',
-  },
   readMore: 'Ler mais',
   notFound: {
     title: 'Página não encontrada',

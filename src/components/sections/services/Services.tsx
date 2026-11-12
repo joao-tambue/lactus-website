@@ -1,6 +1,7 @@
 import { Trans, useTranslation } from 'react-i18next'
 import { Plant } from '@phosphor-icons/react'
 import { services, type ServiceVariant } from '@/data/services'
+import { StaggerGroup, StaggerItem } from '@/components/motion/Stagger'
 
 const cardStyles: Record<
   ServiceVariant,
@@ -50,14 +51,15 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2">
+        <StaggerGroup className="mt-12 grid gap-5 sm:grid-cols-2">
           {services.map(({ id, Icon, variant }) => {
             const styles = cardStyles[variant]
 
             return (
-              <article
+              <StaggerItem
+                as="article"
                 key={id}
-                className={`group flex min-h-64 flex-col justify-between gap-10 rounded-3xl p-7 transition-transform duration-300 hover:-translate-y-1 sm:p-9 ${styles.card}`}
+                className={`group flex min-h-64 flex-col justify-between gap-10 rounded-3xl p-7 transition-[translate] duration-300 hover:-translate-y-1 sm:p-9 ${styles.card}`}
               >
                 <span
                   className={`flex size-12 items-center justify-center rounded-full transition-transform duration-300 group-hover:rotate-[-8deg] ${styles.icon}`}
@@ -75,10 +77,10 @@ export function Services() {
                     {t(`services.items.${id}.text`)}
                   </p>
                 </div>
-              </article>
+              </StaggerItem>
             )
           })}
-        </div>
+        </StaggerGroup>
 
         <p className="mx-auto mt-10 flex w-fit items-center gap-2 rounded-full border border-line-200 px-5 py-2.5 text-center text-sm text-ink-700">
           <Plant size={16} className="shrink-0 text-forest-700" aria-hidden="true" />

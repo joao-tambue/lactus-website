@@ -1,7 +1,9 @@
 import { useEffect } from 'react'
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
+import { MotionConfig } from 'framer-motion'
 import { Footer } from '@/components/layout/Footer'
+import { PageCurtain } from '@/components/motion/PageCurtain'
 
 export const Route = createRootRoute({
   component: RootLayout,
@@ -21,12 +23,15 @@ function RootLayout() {
   }, [t, i18n.language])
 
   return (
-    <div className="flex min-h-svh flex-col">
-      <main className="flex-1">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
+    <MotionConfig reducedMotion="user">
+      <div className="flex min-h-svh flex-col">
+        <main className="flex-1">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
+      <PageCurtain />
+    </MotionConfig>
   )
 }
 

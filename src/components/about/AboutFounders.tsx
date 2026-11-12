@@ -4,6 +4,7 @@ import { teamMembers } from '@/data/teamMembers'
 import type { TeamMemberId } from '@/types/types'
 import { highlightPill } from './highlights'
 import { SectionTitle } from './shared'
+import { StaggerGroup, StaggerItem } from '@/components/motion/Stagger'
 
 const founderIds: TeamMemberId[] = ['anabelmoFeijo', 'israelPedro', 'catarinaMonteiro']
 
@@ -41,9 +42,10 @@ export function AboutFounders() {
           </p>
         </div>
 
-        <ul className="mt-14 grid gap-6 md:grid-cols-3">
+        <StaggerGroup as="ul" className="mt-14 grid gap-6 md:grid-cols-3">
           {founders.map((member, index) => (
-            <li
+            <StaggerItem
+              as="li"
               key={member.id}
               className="flex items-center gap-5 rounded-3xl bg-white p-6"
             >
@@ -59,9 +61,9 @@ export function AboutFounders() {
                   {tHome(`team.members.${member.id}.role`)}
                 </p>
               </div>
-            </li>
+            </StaggerItem>
           ))}
-        </ul>
+        </StaggerGroup>
 
         <CTARouterLink to="/" hash="team" label={t('founders.cta')} className="mt-12" />
       </div>

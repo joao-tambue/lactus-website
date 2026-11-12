@@ -46,7 +46,7 @@ export function Lumi() {
           </ul>
 
           <div className="mt-10 flex max-w-120 items-start gap-5 rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
-            <span className="shrink-0 text-[44px] font-semibold leading-none text-leaf-400">
+            <span data-count className="shrink-0 text-[44px] font-semibold leading-none text-leaf-400">
               {t('lumi.statValue')}
             </span>
             <p className="text-sm leading-relaxed text-white/75">
@@ -66,7 +66,7 @@ export function Lumi() {
         </div>
 
         <div className="relative">
-          <div className="relative rounded-4xl bg-forest-800/45 px-4 pb-20 pt-8 ring-1 ring-white/10 sm:px-8">
+          <div data-parallax="0.12" className="relative rounded-4xl bg-forest-800/45 px-4 pb-20 pt-8 ring-1 ring-white/10 sm:px-8">
             <LumiDiagram
               isOn={isOn}
               title={t('lumi.diagram.aria')}
