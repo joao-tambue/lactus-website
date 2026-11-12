@@ -7,8 +7,9 @@ export const common = {
   header: {
     nav: {
       about: 'About',
+      lumi: 'Lumi',
       successStories: 'Success Stories',
-      resources: 'Resources',
+      resources: 'FAQ',
       solutions: 'Solutions',
     },
     signUp: 'Contact Us',

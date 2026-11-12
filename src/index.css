@@ -26,6 +26,85 @@
   --color-line-400: #667085;
 }
 
+/* Lumi: ilustração viva (microrganismos → corrente → LED) */
+.lumi-current {
+  stroke-dasharray: 5 15;
+  animation: lumi-current 1.4s linear infinite;
+  transition: opacity 400ms ease;
+}
+
+.lumi-current--return {
+  animation-direction: reverse;
+}
+
+.lumi-microbe {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: lumi-microbe 3.6s ease-in-out infinite;
+}
+
+.lumi-glow {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: lumi-glow 2.8s ease-in-out infinite;
+  transition: opacity 500ms ease;
+}
+
+.lumi-bulb {
+  fill: #d7ffb1;
+  transition: fill 400ms ease;
+}
+
+.lumi-diagram[data-on='false'] .lumi-current,
+.lumi-diagram[data-on='false'] .lumi-glow {
+  opacity: 0;
+}
+
+.lumi-diagram[data-on='false'] .lumi-bulb {
+  fill: #4b4f47;
+}
+
+.lumi-diagram[data-on='false'] .lumi-microbe {
+  animation-play-state: paused;
+  opacity: 0.45;
+}
+
+@keyframes lumi-current {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+@keyframes lumi-microbe {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3px, -4px) scale(1.25);
+  }
+}
+
+@keyframes lumi-glow {
+  0%,
+  100% {
+    opacity: 0.75;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lumi-current,
+  .lumi-microbe,
+  .lumi-glow {
+    animation: none;
+  }
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);

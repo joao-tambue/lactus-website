@@ -7,16 +7,16 @@ import {
 import { LogoMark } from '@/components/icons'
 
 const companyLinks = [
-  { key: 'about', href: '#' },
-  { key: 'team', href: '#' },
-  { key: 'contact', href: '#' },
+  { key: 'about', href: '#about' },
+  { key: 'team', href: '#team' },
+  { key: 'contact', href: '#contact' },
 ] as const
 
 const solutionsLinks = [
-  { key: 'energy', href: '#' },
-  { key: 'health', href: '#' },
-  { key: 'environment', href: '#' },
-  { key: 'iot', href: '#' },
+  { key: 'energy', href: '#lumi' },
+  { key: 'health', href: '#solutions' },
+  { key: 'environment', href: '#solutions' },
+  { key: 'iot', href: '#solutions' },
 ] as const
 
 const socialLinks = [

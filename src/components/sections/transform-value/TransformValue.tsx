@@ -5,7 +5,7 @@ export function TransformValue() {
   const { t } = useTranslation('home')
 
   return (
-    <section className="px-6 py-20 sm:px-10 lg:py-28">
+    <section id="about" className="scroll-mt-6 px-6 py-20 sm:px-10 lg:py-28">
       <div className="mx-auto max-w-307.5">
         <div className="flex items-center justify-between gap-4 sm:gap-6 lg:gap-8">
           <h2 className="text-balance text-[48px] font-bold leading-[1.1] tracking-tight text-neutral-950 sm:text-5xl">

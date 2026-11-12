@@ -4,24 +4,28 @@ export type WorldCleanerCardVariant = 'neutral' | 'lime'
 
 export type WorldCleanerCardData = {
   id: WorldCleanerCardId
-  photo: { src: string }
+  /** `position` = object-position, para enquadrar o detalhe certo da foto */
+  photo: { src: string; position: string }
   variant?: WorldCleanerCardVariant
 }
 
 export const worldCleanerCards: WorldCleanerCardData[] = [
   {
     id: 'innovation',
-    photo: { src: '/world-cleaner/card1-photos.png' },
+    // Protótipo do Lumi com o LED aceso
+    photo: { src: '/vaso.jpeg', position: '50% 55%' },
     variant: 'neutral',
   },
   {
     id: 'sustainability',
-    photo: { src: '/world-cleaner/card2-photos.png' },
+    // A planta na mesa de trabalho da equipa
+    photo: { src: '/hero/sobre-ft.jpeg', position: '72% 62%' },
     variant: 'lime',
   },
   {
     id: 'socialImpact',
-    photo: { src: '/world-cleaner/card3-photos.png' },
+    // Equipa no Desafio Genial — Geração Digital
+    photo: { src: '/hero/team-desafio.jpeg', position: '50% 48%' },
     variant: 'neutral',
   },
 ]

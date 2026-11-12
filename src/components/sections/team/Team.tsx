@@ -13,7 +13,7 @@ export default function Team() {
     useCarousel({ itemCount: teamMembers.length, gap: CARD_GAP })
 
   return (
-    <section className="mx-auto w-full max-w-[1800px] px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
+    <section id="team" className="scroll-mt-6 mx-auto w-full max-w-[1800px] px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
       {/* Cabeçalho */}
       <div className="mb-14 flex flex-col justify-between gap-8 lg:mb-20 lg:flex-row lg:items-start">
         <h2 className="text-[2.75rem] text-balance font-semibold leading-[1.05] tracking-tight text-neutral-900 sm:text-[48px]">

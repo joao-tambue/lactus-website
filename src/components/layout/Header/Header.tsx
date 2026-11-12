@@ -9,9 +9,10 @@ import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher'
 
 const navLinks = [
   { key: 'about', href: '#about' },
-  { key: 'successStories', href: '#success-stories' },
-  { key: 'resources', href: '#resources' },
+  { key: 'lumi', href: '#lumi' },
   { key: 'solutions', href: '#solutions' },
+  { key: 'successStories', href: '#success-stories' },
+  { key: 'resources', href: '#faq' },
 ] as const
 
 export function Header() {
@@ -42,7 +43,7 @@ export function Header() {
           <LanguageSwitcher />
 
           <a
-            href="#sign-up"
+            href="#contact"
             className="rounded-full bg-neutral-950 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-neutral-800"
           >
             {t('header.signUp')}
@@ -91,7 +92,7 @@ export function Header() {
             <LanguageSwitcher />
 
             <a
-              href="#sign-up"
+              href="#contact"
               className="rounded-full bg-neutral-950 px-6 py-2.5 text-sm font-semibold text-white"
             >
               {t('header.signUp')}
