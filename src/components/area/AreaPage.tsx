@@ -1,5 +1,6 @@
 import { Trans, useTranslation } from 'react-i18next'
 import { Link } from '@tanstack/react-router'
+import { motion, type Variants } from 'framer-motion'
 import type { Icon } from '@phosphor-icons/react'
 import {
   ArrowLeft,
@@ -31,7 +32,17 @@ const approachStyles = [
   { card: 'bg-leaf-200 text-forest-950', icon: 'bg-forest-950 text-leaf-200', text: 'text-forest-600' },
 ]
 
-const pill = <span className="inline-block rounded-full bg-lime-300 px-[0.3em]" />
+const pill = <span className="inline-block rounded-full bg-lime-300 px-[0.3em] text-forest-950" />
+
+// Entrada do hero: o conteúdo sobe em cascata
+const heroGroup: Variants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } },
+}
+const heroItem: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+}
 
 export function AreaPage({ area }: { area: Area }) {
   const { t } = useTranslation('areas')
@@ -46,54 +57,101 @@ export function AreaPage({ area }: { area: Area }) {
 
   return (
     <>
-      {/* Apresentação */}
-      <section className="px-6 pt-10 sm:px-10 lg:pt-14">
-        <div className="mx-auto grid max-w-307.5 items-end gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-          <div>
-            <Link
-              to="/"
-              hash="areas"
-              className="inline-flex items-center gap-2 rounded-full border border-line-200 px-4 py-2 text-sm font-medium text-ink-900 transition-colors hover:bg-neutral-100"
-            >
-              <ArrowLeft size={16} aria-hidden="true" />
-              {t('labels.back')}
-            </Link>
+      {/* Apresentação: foto de largura total, conteúdo por cima */}
+      <section className="relative isolate flex min-h-152 items-end overflow-hidden bg-forest-950 text-white lg:min-h-176">
+        {/* Parallax (GSAP) no contentor; zoom-out de entrada (framer) na imagem */}
+        <div data-parallax="-0.35" className="absolute inset-x-0 -top-[12%] -z-10 h-[124%]">
+          <motion.img
+            src={area.heroImage}
+            alt={t(`items.${area.id}.imageAlt`)}
+            className="size-full object-cover"
+            style={{ objectPosition: area.heroPosition }}
+            initial={{ scale: 1.12 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
+          />
+        </div>
+        <div className="absolute inset-0 -z-10 bg-linear-to-t from-forest-950 via-forest-950/55 to-forest-950/15" aria-hidden="true" />
+        <div className="absolute inset-0 -z-10 bg-linear-to-r from-forest-950/85 via-forest-950/35 to-transparent" aria-hidden="true" />
 
-            <p className="mt-10 flex items-center gap-3 text-sm font-semibold text-forest-700">
-              <span className="flex size-10 items-center justify-center rounded-full bg-forest-950 text-leaf-200">
+        <div className="mx-auto flex w-full max-w-307.5 flex-col gap-12 px-6 pb-14 pt-36 sm:px-10 lg:flex-row lg:items-end lg:justify-between lg:pb-20">
+          <motion.div variants={heroGroup} initial="hidden" animate="visible" className="max-w-180">
+            <motion.div variants={heroItem}>
+              <Link
+                to="/"
+                hash="areas"
+                className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white ring-1 ring-white/25 backdrop-blur-sm transition-colors hover:bg-white/20"
+              >
+                <ArrowLeft size={16} aria-hidden="true" />
+                {t('labels.back')}
+              </Link>
+            </motion.div>
+
+            <motion.p variants={heroItem} className="mt-10 flex items-center gap-3 text-sm font-semibold text-leaf-200">
+              <span className="flex size-10 items-center justify-center rounded-full bg-leaf-400 text-forest-950">
                 <AreaIcon size={18} aria-hidden="true" />
               </span>
               {t('labels.areaOf', { current: index + 1, total: areas.length })}
-            </p>
+            </motion.p>
 
-            <h1 className="mt-6 text-balance text-[44px] font-bold leading-[1.02] tracking-tight text-neutral-950 sm:text-6xl lg:text-[72px]">
+            <motion.h1
+              variants={heroItem}
+              className="mt-6 text-balance text-[44px] font-bold leading-[1.02] tracking-tight sm:text-6xl lg:text-[80px]"
+            >
               <Trans t={t} i18nKey={`items.${area.id}.title`} components={{ highlight: pill }} />
-            </h1>
+            </motion.h1>
 
-            <p className="mt-6 max-w-150 text-lg leading-relaxed text-neutral-500">
+            <motion.p variants={heroItem} className="mt-6 max-w-150 text-lg leading-relaxed text-white/80">
               {t(`items.${area.id}.intro`)}
-            </p>
+            </motion.p>
 
             {status && (
-              <p className="mt-8 inline-flex items-center gap-2 rounded-full bg-neutral-100 px-4 py-2 text-sm font-medium text-ink-900">
+              <motion.p
+                variants={heroItem}
+                className="mt-8 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white ring-1 ring-white/15 backdrop-blur-sm"
+              >
                 <span className="size-2 rounded-full bg-leaf-400" aria-hidden="true" />
                 {status}
-              </p>
+              </motion.p>
             )}
-          </div>
+          </motion.div>
 
-          <div data-reveal-image className="aspect-4/3 overflow-hidden rounded-4xl lg:aspect-5/6">
-            <img
-              src={area.image}
-              alt={t(`items.${area.id}.imageAlt`)}
-              className="size-full object-cover"
-            />
-          </div>
+          {/* Atalho para as quatro áreas */}
+          <motion.nav
+            aria-label={t('labels.allAreas')}
+            variants={heroGroup}
+            initial="hidden"
+            animate="visible"
+            className="flex flex-wrap gap-2 lg:w-72 lg:flex-col"
+          >
+            {areas.map((item, i) => {
+              const isCurrent = item.id === area.id
+              return (
+                <motion.div key={item.id} variants={heroItem}>
+                  <Link
+                    to="/areas/$areaId"
+                    params={{ areaId: item.slug }}
+                    aria-current={isCurrent ? 'page' : undefined}
+                    className={`flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-medium backdrop-blur-sm transition-colors ${
+                      isCurrent
+                        ? 'bg-leaf-400 text-forest-950'
+                        : 'bg-white/10 text-white ring-1 ring-white/15 hover:bg-white/20'
+                    }`}
+                  >
+                    <span className={isCurrent ? 'text-forest-950/60' : 'text-white/50'}>
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    {tHome(`initiatives.items.${item.id}.title`)}
+                  </Link>
+                </motion.div>
+              )
+            })}
+          </motion.nav>
         </div>
       </section>
 
       {/* O desafio */}
-      <section className="mt-20 bg-neutral-100 px-6 py-20 sm:px-10 lg:mt-28 lg:py-28">
+      <section className="bg-neutral-100 px-6 py-20 sm:px-10 lg:py-28">
         <div className="mx-auto grid max-w-307.5 gap-8 lg:grid-cols-[0.6fr_1.4fr] lg:gap-16">
           <h2 className="text-[36px] font-semibold leading-[1.2] text-black sm:text-[48px]">
             {t('labels.challenge')}

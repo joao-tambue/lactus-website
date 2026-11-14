@@ -5,6 +5,10 @@ export type Area = {
   id: InitiativeId
   slug: string
   image: string
+  /** Foto em alta resolução para o fundo do hero da página */
+  heroImage: string
+  /** object-position: afasta o motivo da foto do texto (que fica à esquerda) */
+  heroPosition: string
   /** Para onde aponta o botão do bloco de destaque */
   highlightLink: { to: '/' | '/sobre'; hash?: string }
   /** Foto real do destaque, quando existe */
@@ -16,6 +20,8 @@ export const areas: Area[] = [
     id: 'sustainableEnergy',
     slug: 'energia-sustentavel',
     image: '/initiatives/energy.jpg',
+    heroImage: '/initiatives/energy-hero.jpg',
+    heroPosition: '50% 60%',
     highlightLink: { to: '/', hash: 'lumi' },
     highlightImage: '/vaso.jpeg',
   },
@@ -23,18 +29,24 @@ export const areas: Area[] = [
     id: 'digitalHealth',
     slug: 'saude-digital',
     image: '/initiatives/health.jpg',
+    heroImage: '/initiatives/health-hero.jpg',
+    heroPosition: '75% 35%',
     highlightLink: { to: '/sobre' },
   },
   {
     id: 'environmentalTech',
     slug: 'tecnologias-ambientais',
     image: '/initiatives/environment.jpg',
+    heroImage: '/initiatives/environment-hero.jpg',
+    heroPosition: '70% 50%',
     highlightLink: { to: '/', hash: 'lumi' },
   },
   {
     id: 'smartSystems',
     slug: 'sistemas-inteligentes',
     image: '/initiatives/iot.jpg',
+    heroImage: '/initiatives/iot-hero.jpg',
+    heroPosition: '65% 50%',
     highlightLink: { to: '/', hash: 'team' },
   },
 ]
