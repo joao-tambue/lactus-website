@@ -2,7 +2,6 @@ import { createFileRoute } from '@tanstack/react-router'
 import { useScrollEffects } from '@/hooks/useScrollEffects'
 import { Header } from '@/components/layout/Header'
 import {
-  AboutFounders,
   AboutHero,
   AboutName,
   AboutPurpose,
@@ -28,7 +27,6 @@ function AboutPage() {
       <AboutTimeline />
       <AboutPurpose />
       <AboutWork />
-      <AboutFounders />
       <Contact />
     </>
   )

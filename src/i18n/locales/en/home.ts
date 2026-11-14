@@ -242,10 +242,10 @@ export const home = {
     text: 'These moments strengthened our belief that ideas born in Angola can create relevant solutions for real challenges.',
     awards: {
       nasa: {
+        medal: '1st',
         tag: 'Luanda 2025',
         value: '1st place',
         label: 'NASA Space Apps Challenge Luanda, with the Saúde+ project',
-        imageAlt: 'Winning team of the NASA Space Apps Challenge Luanda 2025',
       },
       global: {
         tag: 'NASA Space Apps',
@@ -256,7 +256,6 @@ export const home = {
         tag: '2026',
         value: 'Tigra Nova Garra',
         label: 'Award for Lumi’s potential for innovation and social impact.',
-        imageAlt: 'Stage moment at the Tigra Nova Garra Awards',
       },
     },
   },
@@ -302,7 +301,23 @@ export const home = {
   contact: {
     title: 'Where the grid does not reach, <highlight>Lactus does</highlight>',
     text: 'If your organisation works in rural development, education, agriculture, sustainability or social innovation, we can design and implement a pilot project suited to your context.',
-    partner: 'Partner with us',
-    partnerSubject: 'Partnership with Lactus',
+    tagline: 'You have a community. We have the next test.',
+    composerTitle: 'What would you like to talk about?',
+    topics: {
+      pilot: 'Pilot project',
+      partnership: 'Partnership',
+      sponsorship: 'Sponsorship',
+      other: 'Something else',
+    },
+    subjects: {
+      pilot: 'Pilot project with Lactus',
+      partnership: 'Partnership with Lactus',
+      sponsorship: 'Sponsoring Lactus',
+      other: 'Contacting Lactus',
+    },
+    subjectLabel: 'Subject',
+    send: 'Write to Lactus',
+    copy: 'Copy email',
+    copied: 'Email copied',
   },
 } as const

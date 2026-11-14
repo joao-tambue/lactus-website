@@ -78,9 +78,4 @@ export const about = {
     text: 'We develop innovative technology solutions in four areas, always designed for the real context of African communities.',
     cta: 'See our services',
   },
-  founders: {
-    title: 'Who <highlight>founded</highlight> Lactus',
-    text: 'Three colleagues who turned a hackathon win into a company. Today the team is young, multidisciplinary and committed to social impact.',
-    cta: 'Meet the whole team',
-  },
 } as const

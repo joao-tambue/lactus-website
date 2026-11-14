@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useRouterState } from '@tanstack/react-router'
 import {
@@ -60,20 +60,39 @@ export function Header() {
   const { scrollY, scrollYProgress } = useScroll()
   const progress = useSpring(scrollYProgress, { stiffness: 180, damping: 30 })
 
+  // Onde começou o movimento atual (para medir distância percorrida numa direção)
+  const direction = useRef<'up' | 'down' | null>(null)
+  const directionStart = useRef(0)
+
   useMotionValueEvent(scrollY, 'change', (latest) => {
     const previous = scrollY.getPrevious() ?? 0
+    const delta = latest - previous
     setIsFloating(latest > 40)
-    // Esconde ao descer depressa; volta assim que se sobe
-    setIsHidden(latest > previous + 4 && latest > 480 && !isMenuOpen)
-    if (latest < previous) setIsHidden(false)
+
+    if (Math.abs(delta) < 1) return
+
+    const current = delta > 0 ? 'down' : 'up'
+    if (current !== direction.current) {
+      direction.current = current
+      directionStart.current = previous
+    }
+    const travelled = Math.abs(latest - directionStart.current)
+
+    // Perto do topo: sempre visível.
+    // A descer: esconde depois de ~80px (os passos pequenos do fim do scroll
+    // continuam a contar como "a descer", por isso não volta ao parar).
+    // A subir: só reaparece depois de ~160px, um gesto intencional.
+    if (latest < 160) setIsHidden(false)
+    else if (current === 'down' && travelled > 80 && !isMenuOpen) setIsHidden(true)
+    else if (current === 'up' && travelled > 160) setIsHidden(false)
   })
 
   return (
     <header className="sticky top-0 z-50 h-22 w-full">
       <motion.div
         className="px-3"
-        animate={{ y: isHidden ? '-130%' : '0%' }}
-        transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+        animate={{ y: isHidden ? '-130%' : '0%', opacity: isHidden ? 0 : 1 }}
+        transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
       >
         <motion.div
           variants={barVariants}

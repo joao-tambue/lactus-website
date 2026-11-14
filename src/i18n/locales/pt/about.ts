@@ -78,9 +78,4 @@ export const about = {
     text: 'Desenvolvemos soluções tecnológicas inovadoras em quatro áreas, sempre pensadas para o contexto real das comunidades africanas.',
     cta: 'Ver os nossos serviços',
   },
-  founders: {
-    title: 'Quem <highlight>fundou</highlight> a Lactus',
-    text: 'Três colegas que transformaram uma vitória num hackathon numa empresa. Hoje a equipa é jovem, multidisciplinar e comprometida com o impacto social.',
-    cta: 'Conhecer toda a equipa',
-  },
 } as const

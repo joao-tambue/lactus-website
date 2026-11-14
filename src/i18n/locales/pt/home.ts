@@ -243,10 +243,10 @@ export const home = {
     text: 'Estes momentos reforçaram a nossa convicção: ideias nascidas em Angola podem criar soluções relevantes para desafios reais.',
     awards: {
       nasa: {
+        medal: '1.º',
         tag: 'Luanda 2025',
         value: '1.º lugar',
         label: 'NASA Space Apps Challenge Luanda, com o projeto Saúde+',
-        imageAlt: 'Equipa vencedora do NASA Space Apps Challenge Luanda 2025',
       },
       global: {
         tag: 'NASA Space Apps',
@@ -257,7 +257,6 @@ export const home = {
         tag: '2026',
         value: 'Tigra Nova Garra',
         label: 'Prémio pelo potencial de inovação e impacto social do Lumi.',
-        imageAlt: 'Momento de palco nos Prémios Tigra Nova Garra',
       },
     },
   },
@@ -303,7 +302,23 @@ export const home = {
   contact: {
     title: 'Onde a rede não chega, <highlight>a Lactus chega</highlight>',
     text: 'Se a sua organização trabalha com desenvolvimento rural, educação, agricultura, sustentabilidade ou inovação social, podemos desenhar e implementar um projeto-piloto adequado ao seu contexto.',
-    partner: 'Seja nosso parceiro',
-    partnerSubject: 'Parceria com a Lactus',
+    tagline: 'Tem uma comunidade. Nós temos um próximo teste.',
+    composerTitle: 'Sobre o que quer falar?',
+    topics: {
+      pilot: 'Projeto-piloto',
+      partnership: 'Parceria',
+      sponsorship: 'Patrocínio',
+      other: 'Outro assunto',
+    },
+    subjects: {
+      pilot: 'Projeto-piloto com a Lactus',
+      partnership: 'Parceria com a Lactus',
+      sponsorship: 'Patrocínio à Lactus',
+      other: 'Contacto com a Lactus',
+    },
+    subjectLabel: 'Assunto',
+    send: 'Escrever à Lactus',
+    copy: 'Copiar e-mail',
+    copied: 'E-mail copiado',
   },
 } as const
