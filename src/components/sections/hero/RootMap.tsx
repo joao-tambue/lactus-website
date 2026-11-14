@@ -1,4 +1,15 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from '@tanstack/react-router'
+import { areaSlug } from '@/data/areas'
+import type { InitiativeId } from '@/data/initiatives'
+
+// Cada raiz termina na página da sua área
+const areaIds: Record<HeroAreaId, InitiativeId> = {
+  energy: 'sustainableEnergy',
+  health: 'digitalHealth',
+  environment: 'environmentalTech',
+  iot: 'smartSystems',
+}
 
 export type HeroAreaId = 'energy' | 'health' | 'environment' | 'iot'
 
@@ -116,15 +127,16 @@ export function RootMap({ showPulses }: { showPulses: boolean }) {
       </svg>
 
       {roots.map((root) => (
-        <a
+        <Link
           key={root.id}
-          href="#areas"
+          to="/areas/$areaId"
+          params={{ areaId: areaSlug(areaIds[root.id]) }}
           data-node-label
           style={{ left: pct(root.node.x, W), top: pct(root.node.y, H) }}
           className={`absolute mt-6 whitespace-nowrap rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white ring-1 ring-white/15 backdrop-blur-sm transition-colors hover:bg-leaf-400 hover:text-forest-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-leaf-400 ${root.labelAnchor}`}
         >
           {t(`hero.areas.${root.id}`)}
-        </a>
+        </Link>
       ))}
     </div>
   )
@@ -149,12 +161,13 @@ export function RootList() {
             className="absolute -left-2.5 top-2 size-3 rounded-full bg-leaf-400 ring-4 ring-forest-950"
             aria-hidden="true"
           />
-          <a
-            href="#areas"
+          <Link
+            to="/areas/$areaId"
+            params={{ areaId: areaSlug(areaIds[root.id]) }}
             className="ml-4 text-lg font-medium text-white transition-colors hover:text-leaf-400"
           >
             {t(`hero.areas.${root.id}`)}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

@@ -14,10 +14,10 @@ const companyLinks = [
 ] as const
 
 const solutionsLinks = [
-  { key: 'energy', hash: 'lumi' },
-  { key: 'health', hash: 'solutions' },
-  { key: 'environment', hash: 'solutions' },
-  { key: 'iot', hash: 'solutions' },
+  { key: 'energy', slug: 'energia-sustentavel' },
+  { key: 'health', slug: 'saude-digital' },
+  { key: 'environment', slug: 'tecnologias-ambientais' },
+  { key: 'iot', slug: 'sistemas-inteligentes' },
 ] as const
 
 const socialLinks = [
@@ -85,11 +85,11 @@ export function Footer() {
               {t('footer.solutionsTitle')}
             </h3>
             <ul className="mt-5 flex flex-col gap-3">
-              {solutionsLinks.map(({ key, hash }) => (
+              {solutionsLinks.map(({ key, slug }) => (
                 <li key={key}>
                   <Link
-                    to="/"
-                    hash={hash}
+                    to="/areas/$areaId"
+                    params={{ areaId: slug }}
                     className="text-sm text-white/70 transition-colors hover:text-lime-300"
                   >
                     {t(`footer.solutionsLinks.${key}`)}

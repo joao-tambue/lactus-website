@@ -1,7 +1,9 @@
 import { Trans, useTranslation } from 'react-i18next'
 import type { Icon } from '@phosphor-icons/react'
 import { Cpu, Heartbeat, Leaf, Lightning } from '@phosphor-icons/react'
+import { Link } from '@tanstack/react-router'
 import { CTARouterLink } from '@/components/ui/Button'
+import { areaSlug } from '@/data/areas'
 import type { InitiativeId } from '@/data/initiatives'
 import { highlightPill } from './highlights'
 import { SectionTitle } from './shared'
@@ -37,7 +39,12 @@ export function AboutWork() {
 
         <ul className="grid gap-4 sm:grid-cols-2">
           {areas.map(({ id, Icon }) => (
-            <li key={id} className="rounded-3xl bg-neutral-100 p-7">
+            <li key={id}>
+              <Link
+                to="/areas/$areaId"
+                params={{ areaId: areaSlug(id) }}
+                className="block h-full rounded-3xl bg-neutral-100 p-7 transition-colors duration-300 hover:bg-leaf-200"
+              >
               <span className="flex size-11 items-center justify-center rounded-full bg-forest-950 text-white">
                 <Icon size={20} aria-hidden="true" />
               </span>
@@ -47,6 +54,7 @@ export function AboutWork() {
               <p className="mt-2 text-base leading-relaxed text-neutral-500">
                 {tHome(`initiatives.items.${id}.description`)}
               </p>
+              </Link>
             </li>
           ))}
         </ul>

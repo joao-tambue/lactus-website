@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { gsap } from 'gsap'
+import { Link } from '@tanstack/react-router'
 import { ArrowUpRightIcon } from '@/components/icons'
-import { CTAButton } from '@/components/ui/Button'
+import { CTALink } from '@/components/ui/Button'
+import { areaSlug } from '@/data/areas'
 import { initiatives } from '@/data/initiatives'
 
 export function Initiatives() {
@@ -67,8 +69,9 @@ export function Initiatives() {
                 isActive ? 'z-20' : 'z-0'
               }`}
             >
-              <button
-                type="button"
+              <Link
+                to="/areas/$areaId"
+                params={{ areaId: areaSlug(item.id) }}
                 onMouseEnter={() => setActiveIndex(index)}
                 onFocus={() => setActiveIndex(index)}
                 className={`block w-full text-left transition-colors duration-300 ${
@@ -117,14 +120,14 @@ export function Initiatives() {
                     />
                   </div>
                 </div>
-              </button>
+              </Link>
             </li>
           )
         })}
       </ul>
 
       <div className="mx-auto mt-14 flex justify-center">
-        <CTAButton />
+        <CTALink href="#contact" />
       </div>
     </section>
   )
